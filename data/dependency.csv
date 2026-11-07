@@ -1,0 +1,21 @@
+year,settlement,pt_per_100_car,source_table
+2014,All,7.796,derived from journey_share_pct
+2014,Highly Urban,12.062,derived from journey_share_pct
+2014,Rural,3.295,derived from journey_share_pct
+2014,Urban,3.811,derived from journey_share_pct
+2016,All,7.402,derived from journey_share_pct
+2016,Highly Urban,11.351,derived from journey_share_pct
+2016,Rural,3.325,derived from journey_share_pct
+2016,Urban,3.916,derived from journey_share_pct
+2019,All,8.955,derived from journey_share_pct
+2019,Highly Urban,19.449,derived from journey_share_pct
+2019,Rural,2.267,derived from journey_share_pct
+2019,Urban,7.743,derived from journey_share_pct
+2021,All,7.779,derived from journey_share_pct
+2021,Highly Urban,12.945,derived from journey_share_pct
+2021,Rural,1.882,derived from journey_share_pct
+2021,Urban,11.175,derived from journey_share_pct
+2024,All,7.442,derived from journey_share_pct
+2024,Highly Urban,17.868,derived from journey_share_pct
+2024,Rural,4.124,derived from journey_share_pct
+2024,Urban,12.268,derived from journey_share_pct

@@ -1,0 +1,79 @@
+year,geo_level,geography,settlement,mode,trips_per_1000,weekday_trips
+2025,County,Carlow,All,Bus,4.873,302.0
+2025,County,Carlow,All,Rail / DART,0.678,42.0
+2025,County,Cavan,All,Bus,3.378,276.0
+2025,County,Clare,All,Bus,3.463,443.0
+2025,County,Clare,All,Rail / DART,0.297,38.0
+2025,County,Cork,All,Bus,4.009,2342.0
+2025,County,Cork,All,Rail / DART,0.661,386.0
+2025,County,Donegal,All,Bus,2.28,381.0
+2025,County,Dublin,All,Bus,8.713,12705.0
+2025,County,Dublin,All,Luas,0.949,1384.0
+2025,County,Dublin,All,Rail / DART,0.885,1290.0
+2025,County,Galway,All,Bus,4.371,1214.0
+2025,County,Galway,All,Rail / DART,0.281,78.0
+2025,County,Kerry,All,Bus,2.237,350.0
+2025,County,Kerry,All,Rail / DART,0.205,32.0
+2025,County,Kildare,All,Bus,4.9,1214.0
+2025,County,Kildare,All,Rail / DART,1.937,480.0
+2025,County,Kilkenny,All,Bus,3.84,400.0
+2025,County,Kilkenny,All,Rail / DART,0.307,32.0
+2025,County,Laois,All,Bus,3.875,356.0
+2025,County,Laois,All,Rail / DART,2.133,196.0
+2025,County,Leitrim,All,Bus,4.46,157.0
+2025,County,Leitrim,All,Rail / DART,0.909,32.0
+2025,County,Limerick,All,Bus,5.13,1075.0
+2025,County,Limerick,All,Rail / DART,0.678,142.0
+2025,County,Longford,All,Bus,1.882,88.0
+2025,County,Longford,All,Rail / DART,0.856,40.0
+2025,County,Louth,All,Bus,7.716,1078.0
+2025,County,Louth,All,Rail / DART,1.374,192.0
+2025,County,Mayo,All,Bus,1.826,252.0
+2025,County,Mayo,All,Rail / DART,0.435,60.0
+2025,County,Meath,All,Bus,7.531,1663.0
+2025,County,Meath,All,Rail / DART,1.205,266.0
+2025,County,Monaghan,All,Bus,2.451,160.0
+2025,County,Offaly,All,Bus,2.898,241.0
+2025,County,Offaly,All,Rail / DART,0.794,66.0
+2025,County,Roscommon,All,Bus,3.971,279.0
+2025,County,Roscommon,All,Rail / DART,0.797,56.0
+2025,County,Sligo,All,Bus,4.573,321.0
+2025,County,Sligo,All,Rail / DART,0.456,32.0
+2025,County,Tipperary,All,Bus,2.037,342.0
+2025,County,Tipperary,All,Rail / DART,0.941,158.0
+2025,County,Waterford,All,Bus,6.132,781.0
+2025,County,Waterford,All,Rail / DART,0.314,40.0
+2025,County,Westmeath,All,Bus,4.542,437.0
+2025,County,Westmeath,All,Rail / DART,1.247,120.0
+2025,County,Wexford,All,Bus,2.221,364.0
+2025,County,Wexford,All,Rail / DART,0.159,26.0
+2025,County,Wicklow,All,Bus,7.437,1159.0
+2025,County,Wicklow,All,Rail / DART,2.695,420.0
+2025,National,Ireland,All,Bus,4.187,21561.0
+2025,National,Ireland,All,Luas,0.269,1384.0
+2025,National,Ireland,All,Rail / DART,0.346,1784.0
+2025,National,Ireland,Highly Urban,Bus,9.671,16769.0
+2025,National,Ireland,Highly Urban,Luas,0.798,1384.0
+2025,National,Ireland,Highly Urban,Rail / DART,0.993,1722.0
+2025,National,Ireland,Rural,Bus,5.404,10101.0
+2025,National,Ireland,Rural,Rail / DART,0.504,942.0
+2025,National,Ireland,Urban,Bus,6.354,9823.0
+2025,National,Ireland,Urban,Luas,0.257,398.0
+2025,National,Ireland,Urban,Rail / DART,1.063,1644.0
+2025,Regional,Border,All,Bus,2.439,1023.0
+2025,Regional,Border,All,Rail / DART,0.076,32.0
+2025,Regional,Dublin,All,Bus,8.713,12705.0
+2025,Regional,Dublin,All,Luas,0.949,1384.0
+2025,Regional,Dublin,All,Rail / DART,0.885,1290.0
+2025,Regional,Mid-East,All,Bus,5.601,4280.0
+2025,Regional,Mid-East,All,Rail / DART,1.544,1180.0
+2025,Regional,Mid-West,All,Bus,2.952,1492.0
+2025,Regional,Mid-West,All,Rail / DART,0.372,188.0
+2025,Regional,Midlands,All,Bus,2.896,921.0
+2025,Regional,Midlands,All,Rail / DART,0.811,258.0
+2025,Regional,South-East,All,Bus,3.343,1529.0
+2025,Regional,South-East,All,Rail / DART,0.166,76.0
+2025,Regional,South-West,All,Bus,3.566,2641.0
+2025,Regional,South-West,All,Rail / DART,0.521,386.0
+2025,Regional,West,All,Bus,3.247,1578.0
+2025,Regional,West,All,Rail / DART,0.35,170.0

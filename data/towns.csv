@@ -1,0 +1,219 @@
+town,county,region,settlement,population,avg_commute_min
+"Abbeyfeale, Co Limerick",Limerick,Mid-West,Rural,2206.0,24.1
+"Abbeyleix, Co Laois",Laois,Midlands,Rural,1897.0,24.4
+"Allenwood, Co Kildare",Kildare,Mid-East,Rural,1685.0,29.2
+"Annacotty, Co Limerick",Limerick,Mid-West,Rural,3398.0,19.6
+"Ardee, Co Louth",Louth,Mid-East,Urban,5478.0,23.3
+"Arklow, Co Wicklow",Wicklow,Mid-East,Urban,13399.0,25.6
+"Ashbourne, Co Meath",Meath,Mid-East,Urban,15680.0,25.2
+"Ashford, Co Wicklow",Wicklow,Mid-East,Rural,1892.0,30.0
+"Athboy, Co Meath",Meath,Mid-East,Rural,2596.0,30.3
+"Athenry, Co Galway",Galway,West,Rural,4603.0,21.7
+"Athlone, Counties Westmeath & Roscommon",Westmeath,Midlands,Urban,22869.0,20.2
+"Athy, Co Kildare",Kildare,Mid-East,Urban,11035.0,30.2
+"Baile Chláir, Co Galway",Galway,West,Rural,1632.0,19.0
+"Bailieborough, Co Cavan",Cavan,Border,Rural,2974.0,24.3
+"Balbriggan, Co Dublin",Dublin,Dublin,Urban,24322.0,28.8
+"Ballaghaderreen, Co Roscommon",Roscommon,West,Rural,2387.0,22.3
+"Ballina, Co Mayo",Mayo,West,Urban,10556.0,17.8
+"Ballina, Co Tipperary",Tipperary,Mid-West,Rural,2959.0,25.4
+"Ballinasloe, Co Galway",Galway,West,Urban,6597.0,20.2
+"Ballinrobe, Co Mayo",Mayo,West,Rural,3148.0,21.4
+"Ballivor, Co Meath",Meath,Mid-East,Rural,1870.0,32.6
+"Ballybofey-Stranorlar, Co Donegal",Donegal,Border,Urban,5406.0,19.1
+"Ballybunion, Co Kerry",Kerry,South-West,Rural,1618.0,22.5
+"Ballyhaunis, Co Mayo",Mayo,West,Rural,2773.0,18.9
+"Ballyjamesduff, Co Cavan",Cavan,Border,Rural,2917.0,23.2
+"Ballymahon, Co Longford",Longford,Midlands,Rural,1714.0,19.7
+"Ballymote, Co Sligo",Sligo,Border,Rural,1711.0,20.9
+"Ballysadare, Co Sligo",Sligo,Border,Rural,1747.0,17.0
+"Ballyshannon, Co Donegal",Donegal,Border,Rural,2246.0,18.5
+"Balrothery, Co Dublin",Dublin,Dublin,Rural,2282.0,26.2
+"Baltinglass, Co Wicklow",Wicklow,Mid-East,Rural,2611.0,29.8
+"Banagher, Co Offaly",Offaly,Midlands,Rural,1907.0,22.1
+"Bandon, Co Cork",Cork,South-West,Urban,8196.0,21.3
+"Bantry, Co Cork",Cork,South-West,Rural,2929.0,18.3
+"Bearna, Co Galway",Galway,West,Rural,2336.0,24.3
+"Belturbet, Co Cavan",Cavan,Border,Rural,1610.0,23.2
+"Birr, Co Offaly",Offaly,Midlands,Rural,4726.0,20.2
+"Blarney, Co Cork",Cork,South-West,Rural,2779.0,22.2
+"Blessington, Counties Wicklow & Kildare",Wicklow,Mid-East,Urban,5611.0,27.8
+"Boyle, Co Roscommon",Roscommon,West,Rural,2915.0,20.1
+"Bray, Counties Wicklow & Dublin",Wicklow,Mid-East,Urban,33512.0,27.5
+"Bunclody, Counties Wexford & Carlow",Wexford,South-East,Rural,2053.0,21.4
+"Buncrana, Co Donegal",Donegal,Border,Urban,6971.0,17.8
+"Bundoran, Co Donegal",Donegal,Border,Rural,2599.0,18.7
+"Caherconlish, Co Limerick",Limerick,Mid-West,Rural,1569.0,23.8
+"Cahir, Co Tipperary",Tipperary,Mid-West,Rural,3679.0,20.4
+"Callan, Co Kilkenny",Kilkenny,South-East,Rural,2678.0,21.0
+"Carlingford, Co Louth",Louth,Mid-East,Rural,1528.0,26.3
+"Carlow, Counties Carlow & Laois",Carlow,South-East,Urban,27351.0,23.7
+"Carndonagh, Co Donegal",Donegal,Border,Rural,2768.0,18.5
+"Carrick-On-Shannon, Counties Leitrim & Roscommon",Leitrim,Border,Rural,4743.0,21.8
+"Carrick-on-Suir, Co Tipperary",Tipperary,Mid-West,Urban,5752.0,20.8
+"Carrickmacross, Co Monaghan",Monaghan,Border,Urban,5745.0,23.1
+"Carrigaline, Co Cork",Cork,South-West,Urban,18239.0,22.5
+"Carrigtwohill, Co Cork",Cork,South-West,Urban,5568.0,19.5
+"Cashel, Co Tipperary",Tipperary,Mid-West,Rural,4805.0,20.6
+"Castlebar, Co Mayo",Mayo,West,Urban,13054.0,17.9
+"Castleblayney, Co Monaghan",Monaghan,Border,Rural,3926.0,21.4
+"Castlebridge, Co Wexford",Wexford,South-East,Rural,1850.0,21.4
+"Castleconnell, Co Limerick",Limerick,Mid-West,Rural,2488.0,22.0
+"Castledermot, Co Kildare",Kildare,Mid-East,Rural,1685.0,26.0
+"Castleisland, Co Kerry",Kerry,South-West,Rural,2536.0,19.2
+"Castlemartyr, Co Cork",Cork,South-West,Rural,1603.0,24.7
+"Castlerea, Co Roscommon",Roscommon,West,Rural,2348.0,22.8
+"Cavan, Co Cavan",Cavan,Border,Urban,11741.0,22.5
+"Celbridge, Co Kildare",Kildare,Mid-East,Urban,20601.0,28.5
+"Charleville, Co Cork",Cork,South-West,Rural,3970.0,21.6
+"Clane, Co Kildare",Kildare,Mid-East,Urban,8152.0,28.8
+"Clara, Co Offaly",Offaly,Midlands,Rural,3403.0,19.7
+"Claremorris, Co Mayo",Mayo,West,Rural,3857.0,23.3
+"Clogherhead, Co Louth",Louth,Mid-East,Rural,2275.0,28.0
+"Clonakilty, Co Cork",Cork,South-West,Urban,5112.0,18.6
+"Clones, Co Monaghan",Monaghan,Border,Rural,1885.0,18.5
+"Clonmel, Counties Tipperary & Waterford",Tipperary,Mid-West,Urban,18369.0,18.3
+"Cloyne, Co Cork",Cork,South-West,Rural,1967.0,23.6
+"Cobh, Co Cork",Cork,South-West,Urban,14148.0,24.2
+"Collooney, Co Sligo",Sligo,Border,Rural,1797.0,17.6
+"Convoy, Co Donegal",Donegal,Border,Rural,1702.0,17.9
+"Cootehill, Co Cavan",Cavan,Border,Rural,1856.0,21.5
+"Cork city and suburbs, Co Cork",Cork,South-West,Highly Urban,222526.0,21.1
+"Courtown, Co Wexford",Wexford,South-East,Rural,4365.0,31.1
+"Crosshaven, Co Cork",Cork,South-West,Rural,3263.0,26.0
+"Derrinturn, Co Kildare",Kildare,Mid-East,Rural,1837.0,29.7
+"Donabate, Co Dublin",Dublin,Dublin,Urban,9669.0,29.2
+"Donegal, Co Donegal",Donegal,Border,Rural,2749.0,16.6
+"Drogheda, Counties Louth & Meath",Louth,Mid-East,Urban,44135.0,27.2
+"Dublin city and suburbs, Counties Dublin & Meath",Dublin,Dublin,Highly Urban,1263219.0,26.9
+"Duleek, Co Meath",Meath,Mid-East,Rural,4899.0,28.3
+"Dunboyne, Co Meath",Meath,Mid-East,Urban,7155.0,27.3
+"Dundalk, Co Louth",Louth,Mid-East,Urban,43112.0,22.9
+"Dungarvan, Co Waterford",Waterford,South-East,Urban,10081.0,18.6
+"Dunleer, Co Louth",Louth,Mid-East,Rural,2143.0,22.5
+"Dunmanway, Co Cork",Cork,South-West,Rural,1964.0,20.8
+"Dunmore East, Co Waterford",Waterford,South-East,Rural,1731.0,25.8
+"Dunshaughlin, Co Meath",Meath,Mid-East,Urban,6644.0,29.7
+"Edenderry, Co Offaly",Offaly,Midlands,Urban,7888.0,28.4
+"Edgeworthstown, Co Longford",Longford,Midlands,Rural,2199.0,26.0
+"Enfield, Co Meath",Meath,Mid-East,Rural,3663.0,29.5
+"Ennis, Co Clare",Clare,Mid-West,Urban,27923.0,21.1
+"Enniscorthy, Co Wexford",Wexford,South-East,Urban,12310.0,22.3
+"Enniskerry, Co Wicklow",Wicklow,Mid-East,Rural,2000.0,28.6
+"Fermoy, Co Cork",Cork,South-West,Urban,6720.0,21.6
+"Fethard, Co Tipperary",Tipperary,Mid-West,Rural,1738.0,20.1
+"Galway city and suburbs, Co Galway",Galway,West,Highly Urban,85910.0,20.7
+"Gorey, Co Wexford",Wexford,South-East,Urban,11517.0,25.3
+"Gort, Co Galway",Galway,West,Rural,2870.0,24.1
+"Graiguenamanagh-Tinnahinch, Counties Kilkenny & Carlow",Kilkenny,South-East,Rural,1506.0,24.4
+"Greystones-Delgany, Co Wicklow",Wicklow,Mid-East,Urban,22009.0,28.9
+"Kanturk, Co Cork",Cork,South-West,Rural,2803.0,24.1
+"Kells, Co Meath",Meath,Mid-East,Urban,6608.0,27.6
+"Kenmare, Co Kerry",Kerry,South-West,Rural,2566.0,17.7
+"Kilbeggan, Co Westmeath",Westmeath,Midlands,Rural,1575.0,19.8
+"Kilcock, Counties Kildare & Meath",Kildare,Mid-East,Urban,8674.0,28.5
+"Kilcoole, Co Wicklow",Wicklow,Mid-East,Rural,4569.0,26.4
+"Kilcullen, Co Kildare",Kildare,Mid-East,Rural,3815.0,24.6
+"Kildare, Co Kildare",Kildare,Mid-East,Urban,10302.0,27.6
+"Kilkenny, Co Kilkenny",Kilkenny,South-East,Urban,27184.0,20.7
+"Kill, Co Kildare",Kildare,Mid-East,Rural,3818.0,27.4
+"Killaloe, Co Clare",Clare,Mid-West,Rural,1666.0,23.4
+"Killarney, Co Kerry",Kerry,South-West,Urban,14412.0,19.2
+"Killorglin, Co Kerry",Kerry,South-West,Rural,2163.0,19.8
+"Killucan-Rathwire, Co Westmeath",Westmeath,Midlands,Rural,1574.0,29.1
+"Kilmallock, Co Limerick",Limerick,Mid-West,Rural,1761.0,19.7
+"Kilrush, Co Clare",Clare,Mid-West,Rural,2649.0,18.4
+"Kingscourt, Co Cavan",Cavan,Border,Rural,2955.0,22.8
+"Kinnegad, Co Westmeath",Westmeath,Midlands,Rural,3064.0,32.9
+"Kinsale, Co Cork",Cork,South-West,Urban,5991.0,20.3
+"Kinsealy-Drinan, Co Dublin",Dublin,Dublin,Urban,7526.0,25.6
+"Lanesborough-Ballyleague, Counties Roscommon & Longford",Roscommon,West,Rural,1733.0,23.3
+"Laytown-Bettystown-Mornington-Donacarney, Co Meath",Meath,Mid-East,Urban,15642.0,32.5
+"Leixlip, Co Kildare",Kildare,Mid-East,Urban,16733.0,27.4
+"Letterkenny, Co Donegal",Donegal,Border,Urban,22549.0,16.8
+"Lifford, Co Donegal",Donegal,Border,Rural,1613.0,21.7
+"Limerick city and suburbs, Counties Limerick & Clare",Limerick,Mid-West,Highly Urban,102287.0,20.2
+"Listowel, Co Kerry",Kerry,South-West,Rural,4794.0,19.3
+"Longford, Co Longford",Longford,Midlands,Urban,10952.0,22.0
+"Longwood, Co Meath",Meath,Mid-East,Rural,1685.0,30.2
+"Loughrea, Co Galway",Galway,West,Urban,6322.0,22.3
+"Lusk, Co Dublin",Dublin,Dublin,Urban,8806.0,27.0
+"Macroom, Co Cork",Cork,South-West,Rural,4096.0,23.5
+"Maigh Cuilinn, Co Galway",Galway,West,Rural,2279.0,22.4
+"Malahide, Co Dublin",Dublin,Dublin,Urban,18608.0,29.7
+"Mallow, Co Cork",Cork,South-West,Urban,13456.0,24.8
+"Manorhamilton, Co Leitrim",Leitrim,Border,Rural,1667.0,18.2
+"Maynooth, Co Kildare",Kildare,Mid-East,Urban,17259.0,29.5
+"Midleton, Co Cork",Cork,South-West,Urban,13906.0,22.1
+"Millstreet, Co Cork",Cork,South-West,Rural,1722.0,22.3
+"Mitchelstown, Co Cork",Cork,South-West,Rural,3744.0,20.6
+"Moate, Co Westmeath",Westmeath,Midlands,Rural,3013.0,22.3
+"Monaghan, Co Monaghan",Monaghan,Border,Urban,7894.0,19.6
+"Monasterevin, Co Kildare",Kildare,Mid-East,Urban,5307.0,28.0
+"Mountmellick, Co Laois",Laois,Midlands,Rural,4905.0,26.4
+"Mountrath, Co Laois",Laois,Midlands,Rural,2070.0,25.7
+"Muinebeag (Bagenalstown), Co Carlow",Carlow,South-East,Rural,2945.0,18.6
+"Mullagh, Co Cavan",Cavan,Border,Rural,1651.0,29.7
+"Mullingar, Co Westmeath",Westmeath,Midlands,Urban,22667.0,24.7
+"Naas, Co Kildare",Kildare,Mid-East,Urban,26180.0,28.0
+"Navan, Co Meath",Meath,Mid-East,Urban,33886.0,29.7
+"Nenagh, Co Tipperary",Tipperary,Mid-West,Urban,9895.0,19.5
+"New Ross, Wexford & Kilkenny",,All,Urban,8610.0,20.5
+"Newbridge, Co Kildare",Kildare,Mid-East,Urban,24366.0,26.9
+"Newcastle West, Co Limerick",Limerick,Mid-West,Urban,7209.0,21.9
+"Newcastle, Co Dublin",Dublin,Dublin,Rural,4526.0,27.6
+"Newmarket-On-Fergus, Co Clare",Clare,Mid-West,Rural,1887.0,17.5
+"Newport, Co Tipperary",Tipperary,Mid-West,Rural,2183.0,19.7
+"Newtownmountkennedy, Co Wicklow",Wicklow,Mid-East,Rural,3539.0,26.4
+"Oranmore, Co Galway",Galway,West,Urban,5819.0,21.7
+"Oughterard, Co Galway",Galway,West,Rural,1846.0,24.9
+"Passage West-Monkstown, Co Cork",Cork,South-West,Urban,6051.0,23.3
+"Portarlington, Counties Laois & Offaly",Laois,Midlands,Urban,9288.0,29.2
+"Portlaoise, Co Laois",Laois,Midlands,Urban,23494.0,27.0
+"Portlaw, Co Waterford",Waterford,South-East,Rural,1881.0,23.2
+"Portmarnock, Co Dublin",Dublin,Dublin,Urban,10750.0,28.1
+"Portumna, Co Galway",Galway,West,Rural,1690.0,24.2
+"Prosperous, Co Kildare",Kildare,Mid-East,Rural,2413.0,27.6
+"Rathangan, Co Kildare",Kildare,Mid-East,Rural,3263.0,28.7
+"Rathcoole, Co Dublin",Dublin,Dublin,Urban,5792.0,25.6
+"Rathcormac, Co Cork",Cork,South-West,Rural,1957.0,24.1
+"Rathdrum, Co Wicklow",Wicklow,Mid-East,Rural,2264.0,28.8
+"Rathnew, Co Wicklow",Wicklow,Mid-East,Rural,3482.0,23.5
+"Ratoath, Co Meath",Meath,Mid-East,Urban,10077.0,28.2
+"Roscommon, Co Roscommon",Roscommon,West,Urban,6555.0,19.0
+"Roscrea, Co Tipperary",Tipperary,Mid-West,Urban,5542.0,20.1
+"Rosslare Harbour, Co Wexford",Wexford,South-East,Rural,2247.0,21.1
+"Rosslare, Co Wexford",Wexford,South-East,Rural,1795.0,21.1
+"Rush, Co Dublin",Dublin,Dublin,Urban,10875.0,29.0
+"Saggart, Co Dublin",Dublin,Dublin,Rural,4573.0,29.0
+"Sallins, Co Kildare",Kildare,Mid-East,Urban,6269.0,29.2
+"Shannon, Co Clare",Clare,Mid-West,Urban,10256.0,16.4
+"Sixmilebridge, Co Clare",Clare,Mid-West,Rural,2832.0,19.7
+"Skerries, Co Dublin",Dublin,Dublin,Urban,10743.0,29.4
+"Skibbereen, Co Cork",Cork,South-West,Rural,2903.0,18.0
+"Sligo, Co Sligo",Sligo,Border,Urban,20608.0,15.6
+"Stamullen, Co Meath",Meath,Mid-East,Rural,3720.0,28.6
+State,,All,Highly Urban,3630501.0,24.7
+"Strandhill, Co Sligo",Sligo,Border,Rural,1982.0,19.1
+"Swords, Co Dublin",Dublin,Dublin,Urban,40776.0,27.0
+"Templemore, Co Tipperary",Tipperary,Mid-West,Rural,2005.0,20.7
+"Termonfeckin, Co Louth",Louth,Mid-East,Rural,1983.0,26.7
+"Thomastown, Co Kilkenny",Kilkenny,South-East,Rural,2305.0,21.3
+"Thurles, Co Tipperary",Tipperary,Mid-West,Urban,8185.0,22.4
+"Tipperary, Co Tipperary",Tipperary,Mid-West,Urban,5387.0,20.4
+"Tower, Co Cork",Cork,South-West,Rural,3300.0,22.9
+"Tralee, Co Kerry",Kerry,South-West,Urban,26079.0,18.3
+"Tramore, Co Waterford",Waterford,South-East,Urban,11277.0,18.8
+"Trim, Co Meath",Meath,Mid-East,Urban,9563.0,28.0
+"Tuam, Co Galway",Galway,West,Urban,9647.0,22.6
+"Tubbercurry, Co Sligo",Sligo,Border,Rural,2307.0,21.8
+"Tullamore, Co Offaly",Offaly,Midlands,Urban,15598.0,21.8
+"Tullow, Co Carlow",Carlow,South-East,Urban,5138.0,21.8
+"Tullyallen, Co Louth",Louth,Mid-East,Rural,1697.0,24.9
+"Virginia, Co Cavan",Cavan,Border,Rural,3211.0,28.5
+"Waterford city and suburbs, Counties Waterford & Kilkenny",Waterford,South-East,Highly Urban,60079.0,18.3
+"Watergrasshill, Co Cork",Cork,South-West,Rural,1840.0,25.0
+"Westport, Co Mayo",Mayo,West,Urban,6872.0,17.1
+"Wexford, Co Wexford",Wexford,South-East,Urban,21524.0,19.5
+"Wicklow, Co Wicklow",Wicklow,Mid-East,Urban,12957.0,28.1
+"Youghal, Co Cork",Cork,South-West,Urban,8564.0,24.4

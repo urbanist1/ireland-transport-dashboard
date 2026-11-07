@@ -1,0 +1,71 @@
+year,settlement,purpose,share_pct
+2014,All,Commute,24.975
+2014,All,Education,4.496
+2014,All,Leisure,22.478
+2014,All,Personal business & other,24.076
+2014,All,Shopping,23.976
+2014,Highly Urban,Commute,25.674
+2014,Highly Urban,Education,3.996
+2014,Highly Urban,Leisure,22.877
+2014,Highly Urban,Personal business & other,23.477
+2014,Highly Urban,Shopping,23.976
+2014,Rural,Commute,23.6
+2014,Rural,Education,5.4
+2014,Rural,Leisure,21.9
+2014,Rural,Personal business & other,24.3
+2014,Rural,Shopping,24.8
+2014,Urban,Commute,25.125
+2014,Urban,Education,4.605
+2014,Urban,Leisure,22.322
+2014,Urban,Personal business & other,25.025
+2014,Urban,Shopping,22.923
+2016,All,Commute,29.271
+2016,All,Education,3.996
+2016,All,Leisure,20.18
+2016,All,Personal business & other,24.675
+2016,All,Shopping,21.878
+2016,Highly Urban,Commute,31.0
+2016,Highly Urban,Education,3.2
+2016,Highly Urban,Leisure,20.6
+2016,Highly Urban,Personal business & other,23.3
+2016,Highly Urban,Shopping,21.9
+2016,Rural,Commute,27.9
+2016,Rural,Education,3.7
+2016,Rural,Leisure,19.9
+2016,Rural,Personal business & other,26.6
+2016,Rural,Shopping,21.9
+2016,Urban,Commute,26.5
+2016,Urban,Education,6.3
+2016,Urban,Leisure,19.3
+2016,Urban,Personal business & other,25.7
+2016,Urban,Shopping,22.2
+2019,All,Commute,23.624
+2019,All,Education,2.703
+2019,All,Leisure,23.223
+2019,All,Personal business & other,29.129
+2019,All,Shopping,21.321
+2019,Highly Urban,Commute,25.475
+2019,Highly Urban,Education,3.796
+2019,Highly Urban,Leisure,24.276
+2019,Highly Urban,Personal business & other,25.375
+2019,Highly Urban,Shopping,21.079
+2019,Rural,Commute,21.479
+2019,Rural,Education,10.889
+2019,Rural,Leisure,21.778
+2019,Rural,Personal business & other,23.976
+2019,Rural,Shopping,21.878
+2019,Urban,Commute,24.251
+2019,Urban,Education,2.395
+2019,Urban,Leisure,23.752
+2019,Urban,Personal business & other,28.942
+2019,Urban,Shopping,20.659
+2021,All,Commute,23.776
+2021,All,Education,4.196
+2021,All,Leisure,17.183
+2021,All,Personal business & other,30.17
+2021,All,Shopping,24.675
+2024,All,Commute,26.3
+2024,All,Education,2.2
+2024,All,Leisure,19.7
+2024,All,Personal business & other,29.8
+2024,All,Shopping,22.0

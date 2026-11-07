@@ -1,0 +1,617 @@
+series,year,geo_level,geography,settlement,mode_group,value,share_pct
+Census commuters,1986,National,Ireland,All,Active travel,652492.0,37.906
+Census commuters,1986,National,Ireland,All,Other,52919.0,3.074
+Census commuters,1986,National,Ireland,All,Private car,669305.0,38.883
+Census commuters,1986,National,Ireland,All,Public transport,346604.0,20.136
+Census commuters,1991,National,Ireland,All,Active travel,584320.0,33.295
+Census commuters,1991,National,Ireland,All,Other,63944.0,3.644
+Census commuters,1991,National,Ireland,All,Private car,738731.0,42.093
+Census commuters,1991,National,Ireland,All,Public transport,368002.0,20.969
+Census commuters,1996,National,Ireland,All,Active travel,535949.0,27.076
+Census commuters,1996,National,Ireland,All,Other,72455.0,3.66
+Census commuters,1996,National,Ireland,All,Private car,967370.0,48.87
+Census commuters,1996,National,Ireland,All,Public transport,403687.0,20.394
+Census commuters,2002,National,Ireland,All,Active travel,481325.0,20.522
+Census commuters,2002,National,Ireland,All,Other,139050.0,5.929
+Census commuters,2002,National,Ireland,All,Private car,1337784.0,57.038
+Census commuters,2002,National,Ireland,All,Public transport,387275.0,16.512
+Census commuters,2006,National,Ireland,All,Active travel,487070.0,18.536
+Census commuters,2006,National,Ireland,All,Other,164266.0,6.251
+Census commuters,2006,National,Ireland,All,Private car,1577809.0,60.044
+Census commuters,2006,National,Ireland,All,Public transport,398607.0,15.169
+Census commuters,2011,County,Carlow,All,Active travel,5131.0,17.422
+Census commuters,2011,County,Carlow,All,Other,2096.0,7.117
+Census commuters,2011,County,Carlow,All,Private car,20255.0,68.775
+Census commuters,2011,County,Carlow,All,Public transport,1969.0,6.686
+Census commuters,2011,County,Cavan,All,Active travel,4278.0,10.715
+Census commuters,2011,County,Cavan,All,Other,3354.0,8.4
+Census commuters,2011,County,Cavan,All,Private car,26702.0,66.877
+Census commuters,2011,County,Cavan,All,Public transport,5593.0,14.008
+Census commuters,2011,County,Clare,All,Active travel,9210.0,13.903
+Census commuters,2011,County,Clare,All,Other,4200.0,6.34
+Census commuters,2011,County,Clare,All,Private car,47847.0,72.225
+Census commuters,2011,County,Clare,All,Public transport,4990.0,7.532
+Census commuters,2011,County,Cork,All,Active travel,48419.0,16.214
+Census commuters,2011,County,Cork,All,Other,17164.0,5.748
+Census commuters,2011,County,Cork,All,Private car,206772.0,69.242
+Census commuters,2011,County,Cork,All,Public transport,26266.0,8.796
+Census commuters,2011,County,Donegal,All,Active travel,8496.0,10.183
+Census commuters,2011,County,Donegal,All,Other,6588.0,7.896
+Census commuters,2011,County,Donegal,All,Private car,55374.0,66.369
+Census commuters,2011,County,Donegal,All,Public transport,12976.0,15.552
+Census commuters,2011,County,Dublin,All,Active travel,199253.0,26.37
+Census commuters,2011,County,Dublin,All,Other,23844.0,3.156
+Census commuters,2011,County,Dublin,All,Private car,367732.0,48.667
+Census commuters,2011,County,Dublin,All,Public transport,164783.0,21.808
+Census commuters,2011,County,Galway,All,Active travel,21837.0,15.267
+Census commuters,2011,County,Galway,All,Other,8561.0,5.985
+Census commuters,2011,County,Galway,All,Private car,98139.0,68.613
+Census commuters,2011,County,Galway,All,Public transport,14495.0,10.134
+Census commuters,2011,County,Kerry,All,Active travel,10802.0,13.956
+Census commuters,2011,County,Kerry,All,Other,6035.0,7.797
+Census commuters,2011,County,Kerry,All,Private car,53251.0,68.801
+Census commuters,2011,County,Kerry,All,Public transport,7311.0,9.446
+Census commuters,2011,County,Kildare,All,Active travel,21034.0,16.379
+Census commuters,2011,County,Kildare,All,Other,6677.0,5.199
+Census commuters,2011,County,Kildare,All,Private car,83723.0,65.196
+Census commuters,2011,County,Kildare,All,Public transport,16984.0,13.226
+Census commuters,2011,County,Kilkenny,All,Active travel,7980.0,14.797
+Census commuters,2011,County,Kilkenny,All,Other,3539.0,6.562
+Census commuters,2011,County,Kilkenny,All,Private car,37424.0,69.394
+Census commuters,2011,County,Kilkenny,All,Public transport,4987.0,9.247
+Census commuters,2011,County,Laois,All,Active travel,5585.0,12.567
+Census commuters,2011,County,Laois,All,Other,3151.0,7.09
+Census commuters,2011,County,Laois,All,Private car,30973.0,69.695
+Census commuters,2011,County,Laois,All,Public transport,4732.0,10.648
+Census commuters,2011,County,Leitrim,All,Active travel,1967.0,11.514
+Census commuters,2011,County,Leitrim,All,Other,1446.0,8.465
+Census commuters,2011,County,Leitrim,All,Private car,11398.0,66.721
+Census commuters,2011,County,Leitrim,All,Public transport,2272.0,13.3
+Census commuters,2011,County,Limerick,All,Active travel,18417.0,17.457
+Census commuters,2011,County,Limerick,All,Other,5821.0,5.518
+Census commuters,2011,County,Limerick,All,Private car,73175.0,69.362
+Census commuters,2011,County,Limerick,All,Public transport,8084.0,7.663
+Census commuters,2011,County,Longford,All,Active travel,2951.0,14.195
+Census commuters,2011,County,Longford,All,Other,1430.0,6.879
+Census commuters,2011,County,Longford,All,Private car,14001.0,67.348
+Census commuters,2011,County,Longford,All,Public transport,2407.0,11.578
+Census commuters,2011,County,Louth,All,Active travel,12912.0,18.819
+Census commuters,2011,County,Louth,All,Other,3673.0,5.353
+Census commuters,2011,County,Louth,All,Private car,43731.0,63.736
+Census commuters,2011,County,Louth,All,Public transport,8297.0,12.092
+Census commuters,2011,County,Mayo,All,Active travel,8974.0,12.659
+Census commuters,2011,County,Mayo,All,Other,5903.0,8.327
+Census commuters,2011,County,Mayo,All,Private car,48791.0,68.824
+Census commuters,2011,County,Mayo,All,Public transport,7224.0,10.19
+Census commuters,2011,County,Meath,All,Active travel,16529.0,14.957
+Census commuters,2011,County,Meath,All,Other,6968.0,6.305
+Census commuters,2011,County,Meath,All,Private car,73099.0,66.147
+Census commuters,2011,County,Meath,All,Public transport,13914.0,12.591
+Census commuters,2011,County,Monaghan,All,Active travel,4236.0,12.505
+Census commuters,2011,County,Monaghan,All,Other,3108.0,9.175
+Census commuters,2011,County,Monaghan,All,Private car,22203.0,65.546
+Census commuters,2011,County,Monaghan,All,Public transport,4327.0,12.774
+Census commuters,2011,County,Offaly,All,Active travel,6041.0,14.457
+Census commuters,2011,County,Offaly,All,Other,3019.0,7.225
+Census commuters,2011,County,Offaly,All,Private car,28246.0,67.598
+Census commuters,2011,County,Offaly,All,Public transport,4479.0,10.719
+Census commuters,2011,County,Roscommon,All,Active travel,3530.0,10.079
+Census commuters,2011,County,Roscommon,All,Other,2875.0,8.209
+Census commuters,2011,County,Roscommon,All,Private car,25043.0,71.502
+Census commuters,2011,County,Roscommon,All,Public transport,3576.0,10.21
+Census commuters,2011,County,Sligo,All,Active travel,5496.0,14.992
+Census commuters,2011,County,Sligo,All,Other,2482.0,6.77
+Census commuters,2011,County,Sligo,All,Private car,25302.0,69.018
+Census commuters,2011,County,Sligo,All,Public transport,3380.0,9.22
+Census commuters,2011,County,Tipperary,All,Active travel,12536.0,14.34
+Census commuters,2011,County,Tipperary,All,Other,5600.0,6.406
+Census commuters,2011,County,Tipperary,All,Private car,61877.0,70.783
+Census commuters,2011,County,Tipperary,All,Public transport,7405.0,8.471
+Census commuters,2011,County,Waterford,All,Active travel,10401.0,16.538
+Census commuters,2011,County,Waterford,All,Other,3225.0,5.128
+Census commuters,2011,County,Waterford,All,Private car,44687.0,71.055
+Census commuters,2011,County,Waterford,All,Public transport,4578.0,7.279
+Census commuters,2011,County,Westmeath,All,Active travel,7608.0,15.744
+Census commuters,2011,County,Westmeath,All,Other,2989.0,6.185
+Census commuters,2011,County,Westmeath,All,Private car,32699.0,67.668
+Census commuters,2011,County,Westmeath,All,Public transport,5027.0,10.403
+Census commuters,2011,County,Wexford,All,Active travel,10737.0,13.996
+Census commuters,2011,County,Wexford,All,Other,5375.0,7.006
+Census commuters,2011,County,Wexford,All,Private car,52885.0,68.935
+Census commuters,2011,County,Wexford,All,Public transport,7720.0,10.063
+Census commuters,2011,County,Wicklow,All,Active travel,11755.0,15.027
+Census commuters,2011,County,Wicklow,All,Other,4304.0,5.502
+Census commuters,2011,County,Wicklow,All,Private car,50405.0,64.435
+Census commuters,2011,County,Wicklow,All,Public transport,11762.0,15.036
+Census commuters,2011,National,Ireland,All,Active travel,476115.0,18.208
+Census commuters,2011,National,Ireland,All,Other,143427.0,5.485
+Census commuters,2011,National,Ireland,All,Private car,1635734.0,62.556
+Census commuters,2011,National,Ireland,All,Public transport,359538.0,13.75
+Census commuters,2011,Regional,Border,All,Active travel,24473.0,11.6
+Census commuters,2011,Regional,Border,All,Other,16978.0,8.047
+Census commuters,2011,Regional,Border,All,Private car,140979.0,66.822
+Census commuters,2011,Regional,Border,All,Public transport,28548.0,13.531
+Census commuters,2011,Regional,Dublin,All,Active travel,199253.0,26.37
+Census commuters,2011,Regional,Dublin,All,Other,23844.0,3.156
+Census commuters,2011,Regional,Dublin,All,Private car,367732.0,48.667
+Census commuters,2011,Regional,Dublin,All,Public transport,164783.0,21.808
+Census commuters,2011,Regional,Mid-East,All,Active travel,62230.0,16.131
+Census commuters,2011,Regional,Mid-East,All,Other,21622.0,5.605
+Census commuters,2011,Regional,Mid-East,All,Private car,250958.0,65.054
+Census commuters,2011,Regional,Mid-East,All,Public transport,50957.0,13.209
+Census commuters,2011,Regional,Mid-West,All,Active travel,40163.0,15.497
+Census commuters,2011,Regional,Mid-West,All,Other,15621.0,6.028
+Census commuters,2011,Regional,Mid-West,All,Private car,182899.0,70.573
+Census commuters,2011,Regional,Mid-West,All,Public transport,20479.0,7.902
+Census commuters,2011,Regional,Midlands,All,Active travel,22185.0,14.282
+Census commuters,2011,Regional,Midlands,All,Other,10589.0,6.817
+Census commuters,2011,Regional,Midlands,All,Private car,105919.0,68.186
+Census commuters,2011,Regional,Midlands,All,Public transport,16645.0,10.715
+Census commuters,2011,Regional,South-East,All,Active travel,34249.0,15.359
+Census commuters,2011,Regional,South-East,All,Other,14235.0,6.384
+Census commuters,2011,Regional,South-East,All,Private car,155251.0,69.623
+Census commuters,2011,Regional,South-East,All,Public transport,19254.0,8.635
+Census commuters,2011,Regional,South-West,All,Active travel,59221.0,15.749
+Census commuters,2011,Regional,South-West,All,Other,23199.0,6.17
+Census commuters,2011,Regional,South-West,All,Private car,260023.0,69.151
+Census commuters,2011,Regional,South-West,All,Public transport,33577.0,8.93
+Census commuters,2011,Regional,West,All,Active travel,34341.0,13.794
+Census commuters,2011,Regional,West,All,Other,17339.0,6.965
+Census commuters,2011,Regional,West,All,Private car,171973.0,69.08
+Census commuters,2011,Regional,West,All,Public transport,25295.0,10.161
+Census commuters,2016,County,Carlow,All,Active travel,5219.0,16.23
+Census commuters,2016,County,Carlow,All,Other,2114.0,6.574
+Census commuters,2016,County,Carlow,All,Private car,22536.0,70.081
+Census commuters,2016,County,Carlow,All,Public transport,2288.0,7.115
+Census commuters,2016,County,Cavan,All,Active travel,4600.0,10.414
+Census commuters,2016,County,Cavan,All,Other,3756.0,8.503
+Census commuters,2016,County,Cavan,All,Private car,30161.0,68.279
+Census commuters,2016,County,Cavan,All,Public transport,5656.0,12.804
+Census commuters,2016,County,Clare,All,Active travel,8774.0,12.599
+Census commuters,2016,County,Clare,All,Other,4138.0,5.942
+Census commuters,2016,County,Clare,All,Private car,51648.0,74.162
+Census commuters,2016,County,Clare,All,Public transport,5082.0,7.297
+Census commuters,2016,County,Cork,All,Active travel,50079.0,15.323
+Census commuters,2016,County,Cork,All,Other,17631.0,5.395
+Census commuters,2016,County,Cork,All,Private car,228614.0,69.949
+Census commuters,2016,County,Cork,All,Public transport,30505.0,9.334
+Census commuters,2016,County,Donegal,All,Active travel,8333.0,9.583
+Census commuters,2016,County,Donegal,All,Other,6961.0,8.005
+Census commuters,2016,County,Donegal,All,Private car,59138.0,68.011
+Census commuters,2016,County,Donegal,All,Public transport,12522.0,14.401
+Census commuters,2016,County,Dublin,All,Active travel,224982.0,27.319
+Census commuters,2016,County,Dublin,All,Other,24638.0,2.992
+Census commuters,2016,County,Dublin,All,Private car,387970.0,47.111
+Census commuters,2016,County,Dublin,All,Public transport,185932.0,22.578
+Census commuters,2016,County,Galway,All,Active travel,23058.0,14.967
+Census commuters,2016,County,Galway,All,Other,8952.0,5.811
+Census commuters,2016,County,Galway,All,Private car,106554.0,69.165
+Census commuters,2016,County,Galway,All,Public transport,15494.0,10.057
+Census commuters,2016,County,Kerry,All,Active travel,10596.0,13.096
+Census commuters,2016,County,Kerry,All,Other,6060.0,7.49
+Census commuters,2016,County,Kerry,All,Private car,57564.0,71.145
+Census commuters,2016,County,Kerry,All,Public transport,6691.0,8.27
+Census commuters,2016,County,Kildare,All,Active travel,22809.0,15.978
+Census commuters,2016,County,Kildare,All,Other,7003.0,4.906
+Census commuters,2016,County,Kildare,All,Private car,92511.0,64.803
+Census commuters,2016,County,Kildare,All,Public transport,20434.0,14.314
+Census commuters,2016,County,Kilkenny,All,Active travel,8083.0,13.894
+Census commuters,2016,County,Kilkenny,All,Other,3613.0,6.21
+Census commuters,2016,County,Kilkenny,All,Private car,41173.0,70.773
+Census commuters,2016,County,Kilkenny,All,Public transport,5307.0,9.122
+Census commuters,2016,County,Laois,All,Active travel,5736.0,11.565
+Census commuters,2016,County,Laois,All,Other,3398.0,6.851
+Census commuters,2016,County,Laois,All,Private car,35019.0,70.603
+Census commuters,2016,County,Laois,All,Public transport,5447.0,10.982
+Census commuters,2016,County,Leitrim,All,Active travel,1952.0,10.881
+Census commuters,2016,County,Leitrim,All,Other,1471.0,8.2
+Census commuters,2016,County,Leitrim,All,Private car,12371.0,68.961
+Census commuters,2016,County,Leitrim,All,Public transport,2145.0,11.957
+Census commuters,2016,County,Limerick,All,Active travel,18974.0,16.949
+Census commuters,2016,County,Limerick,All,Other,5856.0,5.231
+Census commuters,2016,County,Limerick,All,Private car,78435.0,70.065
+Census commuters,2016,County,Limerick,All,Public transport,8681.0,7.755
+Census commuters,2016,County,Longford,All,Active travel,3110.0,13.843
+Census commuters,2016,County,Longford,All,Other,1512.0,6.73
+Census commuters,2016,County,Longford,All,Private car,15112.0,67.263
+Census commuters,2016,County,Longford,All,Public transport,2733.0,12.165
+Census commuters,2016,County,Louth,All,Active travel,14096.0,18.646
+Census commuters,2016,County,Louth,All,Other,3913.0,5.176
+Census commuters,2016,County,Louth,All,Private car,48018.0,63.517
+Census commuters,2016,County,Louth,All,Public transport,9572.0,12.662
+Census commuters,2016,County,Mayo,All,Active travel,8619.0,11.848
+Census commuters,2016,County,Mayo,All,Other,5910.0,8.124
+Census commuters,2016,County,Mayo,All,Private car,51429.0,70.694
+Census commuters,2016,County,Mayo,All,Public transport,6791.0,9.335
+Census commuters,2016,County,Meath,All,Active travel,17742.0,14.316
+Census commuters,2016,County,Meath,All,Other,7582.0,6.118
+Census commuters,2016,County,Meath,All,Private car,81576.0,65.825
+Census commuters,2016,County,Meath,All,Public transport,17028.0,13.74
+Census commuters,2016,County,Monaghan,All,Active travel,4059.0,11.143
+Census commuters,2016,County,Monaghan,All,Other,3265.0,8.963
+Census commuters,2016,County,Monaghan,All,Private car,25012.0,68.661
+Census commuters,2016,County,Monaghan,All,Public transport,4092.0,11.233
+Census commuters,2016,County,Offaly,All,Active travel,6056.0,13.567
+Census commuters,2016,County,Offaly,All,Other,3130.0,7.012
+Census commuters,2016,County,Offaly,All,Private car,30666.0,68.701
+Census commuters,2016,County,Offaly,All,Public transport,4785.0,10.72
+Census commuters,2016,County,Roscommon,All,Active travel,3114.0,8.482
+Census commuters,2016,County,Roscommon,All,Other,2890.0,7.872
+Census commuters,2016,County,Roscommon,All,Private car,27251.0,74.225
+Census commuters,2016,County,Roscommon,All,Public transport,3459.0,9.421
+Census commuters,2016,County,Sligo,All,Active travel,5261.0,14.142
+Census commuters,2016,County,Sligo,All,Other,2469.0,6.637
+Census commuters,2016,County,Sligo,All,Private car,26272.0,70.62
+Census commuters,2016,County,Sligo,All,Public transport,3200.0,8.602
+Census commuters,2016,County,Tipperary,All,Active travel,12160.0,13.415
+Census commuters,2016,County,Tipperary,All,Other,5624.0,6.204
+Census commuters,2016,County,Tipperary,All,Private car,65547.0,72.312
+Census commuters,2016,County,Tipperary,All,Public transport,7314.0,8.069
+Census commuters,2016,County,Waterford,All,Active travel,10660.0,16.093
+Census commuters,2016,County,Waterford,All,Other,3236.0,4.885
+Census commuters,2016,County,Waterford,All,Private car,47765.0,72.109
+Census commuters,2016,County,Waterford,All,Public transport,4579.0,6.913
+Census commuters,2016,County,Westmeath,All,Active travel,7687.0,14.861
+Census commuters,2016,County,Westmeath,All,Other,3207.0,6.2
+Census commuters,2016,County,Westmeath,All,Private car,35575.0,68.775
+Census commuters,2016,County,Westmeath,All,Public transport,5258.0,10.165
+Census commuters,2016,County,Wexford,All,Active travel,10549.0,12.667
+Census commuters,2016,County,Wexford,All,Other,5779.0,6.939
+Census commuters,2016,County,Wexford,All,Private car,59149.0,71.027
+Census commuters,2016,County,Wexford,All,Public transport,7800.0,9.366
+Census commuters,2016,County,Wicklow,All,Active travel,12036.0,14.114
+Census commuters,2016,County,Wicklow,All,Other,4684.0,5.493
+Census commuters,2016,County,Wicklow,All,Private car,55629.0,65.233
+Census commuters,2016,County,Wicklow,All,Public transport,12929.0,15.161
+Census commuters,2016,National,Ireland,All,Active travel,508344.0,17.991
+Census commuters,2016,National,Ireland,All,Other,148792.0,5.266
+Census commuters,2016,National,Ireland,All,Private car,1772695.0,62.738
+Census commuters,2016,National,Ireland,All,Public transport,395724.0,14.005
+Census commuters,2016,Regional,Border,All,Active travel,24205.0,10.869
+Census commuters,2016,Regional,Border,All,Other,17922.0,8.048
+Census commuters,2016,Regional,Border,All,Private car,152954.0,68.683
+Census commuters,2016,Regional,Border,All,Public transport,27615.0,12.4
+Census commuters,2016,Regional,Dublin,All,Active travel,224982.0,27.319
+Census commuters,2016,Regional,Dublin,All,Other,24638.0,2.992
+Census commuters,2016,Regional,Dublin,All,Private car,387970.0,47.111
+Census commuters,2016,Regional,Dublin,All,Public transport,185932.0,22.578
+Census commuters,2016,Regional,Mid-East,All,Active travel,66683.0,15.596
+Census commuters,2016,Regional,Mid-East,All,Other,23182.0,5.422
+Census commuters,2016,Regional,Mid-East,All,Private car,277734.0,64.958
+Census commuters,2016,Regional,Mid-East,All,Public transport,59963.0,14.024
+Census commuters,2016,Regional,Mid-West,All,Active travel,39908.0,14.66
+Census commuters,2016,Regional,Mid-West,All,Other,15618.0,5.737
+Census commuters,2016,Regional,Mid-West,All,Private car,195630.0,71.861
+Census commuters,2016,Regional,Mid-West,All,Public transport,21077.0,7.742
+Census commuters,2016,Regional,Midlands,All,Active travel,22589.0,13.411
+Census commuters,2016,Regional,Midlands,All,Other,11247.0,6.678
+Census commuters,2016,Regional,Midlands,All,Private car,116372.0,69.092
+Census commuters,2016,Regional,Midlands,All,Public transport,18223.0,10.819
+Census commuters,2016,Regional,South-East,All,Active travel,34511.0,14.389
+Census commuters,2016,Regional,South-East,All,Other,14742.0,6.146
+Census commuters,2016,Regional,South-East,All,Private car,170623.0,71.137
+Census commuters,2016,Regional,South-East,All,Public transport,19974.0,8.328
+Census commuters,2016,Regional,South-West,All,Active travel,60675.0,14.881
+Census commuters,2016,Regional,South-West,All,Other,23691.0,5.81
+Census commuters,2016,Regional,South-West,All,Private car,286178.0,70.186
+Census commuters,2016,Regional,South-West,All,Public transport,37196.0,9.122
+Census commuters,2016,Regional,West,All,Active travel,34791.0,13.202
+Census commuters,2016,Regional,West,All,Other,17752.0,6.736
+Census commuters,2016,Regional,West,All,Private car,185234.0,70.292
+Census commuters,2016,Regional,West,All,Public transport,25744.0,9.769
+Census commuters,2022,County,Carlow,All,Active travel,5576.0,15.233
+Census commuters,2022,County,Carlow,All,Other,2531.0,6.914
+Census commuters,2022,County,Carlow,All,Private car,25789.0,70.452
+Census commuters,2022,County,Carlow,All,Public transport,2709.0,7.401
+Census commuters,2022,County,Cavan,All,Active travel,5178.0,10.308
+Census commuters,2022,County,Cavan,All,Other,4477.0,8.913
+Census commuters,2022,County,Cavan,All,Private car,35038.0,69.754
+Census commuters,2022,County,Cavan,All,Public transport,5538.0,11.025
+Census commuters,2022,County,Clare,All,Active travel,9134.0,12.026
+Census commuters,2022,County,Clare,All,Other,4822.0,6.349
+Census commuters,2022,County,Clare,All,Private car,56725.0,74.685
+Census commuters,2022,County,Clare,All,Public transport,5271.0,6.94
+Census commuters,2022,County,Cork,All,Active travel,53981.0,15.195
+Census commuters,2022,County,Cork,All,Other,19566.0,5.508
+Census commuters,2022,County,Cork,All,Private car,248169.0,69.858
+Census commuters,2022,County,Cork,All,Public transport,33530.0,9.439
+Census commuters,2022,County,Donegal,All,Active travel,7992.0,8.338
+Census commuters,2022,County,Donegal,All,Other,8508.0,8.876
+Census commuters,2022,County,Donegal,All,Private car,67531.0,70.456
+Census commuters,2022,County,Donegal,All,Public transport,11818.0,12.33
+Census commuters,2022,County,Dublin,All,Active travel,245278.0,28.557
+Census commuters,2022,County,Dublin,All,Other,28138.0,3.276
+Census commuters,2022,County,Dublin,All,Private car,397056.0,46.228
+Census commuters,2022,County,Dublin,All,Public transport,188436.0,21.939
+Census commuters,2022,County,Galway,All,Active travel,24590.0,14.628
+Census commuters,2022,County,Galway,All,Other,10005.0,5.952
+Census commuters,2022,County,Galway,All,Private car,116649.0,69.393
+Census commuters,2022,County,Galway,All,Public transport,16855.0,10.027
+Census commuters,2022,County,Kerry,All,Active travel,11032.0,12.432
+Census commuters,2022,County,Kerry,All,Other,7102.0,8.003
+Census commuters,2022,County,Kerry,All,Private car,63875.0,71.981
+Census commuters,2022,County,Kerry,All,Public transport,6730.0,7.584
+Census commuters,2022,County,Kildare,All,Active travel,26559.0,16.622
+Census commuters,2022,County,Kildare,All,Other,8352.0,5.227
+Census commuters,2022,County,Kildare,All,Private car,103634.0,64.861
+Census commuters,2022,County,Kildare,All,Public transport,21234.0,13.29
+Census commuters,2022,County,Kilkenny,All,Active travel,8378.0,13.125
+Census commuters,2022,County,Kilkenny,All,Other,4180.0,6.548
+Census commuters,2022,County,Kilkenny,All,Private car,45643.0,71.504
+Census commuters,2022,County,Kilkenny,All,Public transport,5632.0,8.823
+Census commuters,2022,County,Laois,All,Active travel,6421.0,11.195
+Census commuters,2022,County,Laois,All,Other,4140.0,7.218
+Census commuters,2022,County,Laois,All,Private car,40907.0,71.322
+Census commuters,2022,County,Laois,All,Public transport,5887.0,10.264
+Census commuters,2022,County,Leitrim,All,Active travel,2020.0,9.719
+Census commuters,2022,County,Leitrim,All,Other,1805.0,8.684
+Census commuters,2022,County,Leitrim,All,Private car,14835.0,71.374
+Census commuters,2022,County,Leitrim,All,Public transport,2125.0,10.224
+Census commuters,2022,County,Limerick,All,Active travel,19395.0,16.271
+Census commuters,2022,County,Limerick,All,Other,6492.0,5.446
+Census commuters,2022,County,Limerick,All,Private car,83323.0,69.902
+Census commuters,2022,County,Limerick,All,Public transport,9989.0,8.38
+Census commuters,2022,County,Longford,All,Active travel,3310.0,13.174
+Census commuters,2022,County,Longford,All,Other,1733.0,6.898
+Census commuters,2022,County,Longford,All,Private car,17225.0,68.557
+Census commuters,2022,County,Longford,All,Public transport,2857.0,11.371
+Census commuters,2022,County,Louth,All,Active travel,15550.0,18.758
+Census commuters,2022,County,Louth,All,Other,4522.0,5.455
+Census commuters,2022,County,Louth,All,Private car,52940.0,63.863
+Census commuters,2022,County,Louth,All,Public transport,9884.0,11.923
+Census commuters,2022,County,Mayo,All,Active travel,8772.0,10.916
+Census commuters,2022,County,Mayo,All,Other,6550.0,8.151
+Census commuters,2022,County,Mayo,All,Private car,58364.0,72.626
+Census commuters,2022,County,Mayo,All,Public transport,6676.0,8.307
+Census commuters,2022,County,Meath,All,Active travel,21683.0,15.028
+Census commuters,2022,County,Meath,All,Other,8870.0,6.147
+Census commuters,2022,County,Meath,All,Private car,94693.0,65.628
+Census commuters,2022,County,Meath,All,Public transport,19041.0,13.197
+Census commuters,2022,County,Monaghan,All,Active travel,4240.0,10.159
+Census commuters,2022,County,Monaghan,All,Other,3815.0,9.141
+Census commuters,2022,County,Monaghan,All,Private car,29435.0,70.528
+Census commuters,2022,County,Monaghan,All,Public transport,4245.0,10.171
+Census commuters,2022,County,Offaly,All,Active travel,6607.0,13.197
+Census commuters,2022,County,Offaly,All,Other,3667.0,7.325
+Census commuters,2022,County,Offaly,All,Private car,34991.0,69.893
+Census commuters,2022,County,Offaly,All,Public transport,4799.0,9.586
+Census commuters,2022,County,Roscommon,All,Active travel,3411.0,8.23
+Census commuters,2022,County,Roscommon,All,Other,3325.0,8.022
+Census commuters,2022,County,Roscommon,All,Private car,31140.0,75.13
+Census commuters,2022,County,Roscommon,All,Public transport,3572.0,8.618
+Census commuters,2022,County,Sligo,All,Active travel,5880.0,14.408
+Census commuters,2022,County,Sligo,All,Other,2756.0,6.753
+Census commuters,2022,County,Sligo,All,Private car,28944.0,70.922
+Census commuters,2022,County,Sligo,All,Public transport,3231.0,7.917
+Census commuters,2022,County,Tipperary,All,Active travel,12574.0,12.411
+Census commuters,2022,County,Tipperary,All,Other,6612.0,6.526
+Census commuters,2022,County,Tipperary,All,Private car,74855.0,73.886
+Census commuters,2022,County,Tipperary,All,Public transport,7271.0,7.177
+Census commuters,2022,County,Waterford,All,Active travel,11774.0,15.807
+Census commuters,2022,County,Waterford,All,Other,3914.0,5.255
+Census commuters,2022,County,Waterford,All,Private car,53206.0,71.431
+Census commuters,2022,County,Waterford,All,Public transport,5592.0,7.507
+Census commuters,2022,County,Westmeath,All,Active travel,8146.0,14.137
+Census commuters,2022,County,Westmeath,All,Other,3782.0,6.564
+Census commuters,2022,County,Westmeath,All,Private car,40431.0,70.167
+Census commuters,2022,County,Westmeath,All,Public transport,5262.0,9.132
+Census commuters,2022,County,Wexford,All,Active travel,11244.0,11.745
+Census commuters,2022,County,Wexford,All,Other,7074.0,7.389
+Census commuters,2022,County,Wexford,All,Private car,68893.0,71.963
+Census commuters,2022,County,Wexford,All,Public transport,8523.0,8.903
+Census commuters,2022,County,Wicklow,All,Active travel,14778.0,15.753
+Census commuters,2022,County,Wicklow,All,Other,5327.0,5.679
+Census commuters,2022,County,Wicklow,All,Private car,61172.0,65.209
+Census commuters,2022,County,Wicklow,All,Public transport,12532.0,13.359
+Census commuters,2022,National,Ireland,All,Active travel,553503.0,17.969
+Census commuters,2022,National,Ireland,All,Other,172065.0,5.586
+Census commuters,2022,National,Ireland,All,Private car,1945463.0,63.159
+Census commuters,2022,National,Ireland,All,Public transport,409239.0,13.286
+Census commuters,2022,Regional,Border,All,Active travel,25310.0,10.148
+Census commuters,2022,Regional,Border,All,Other,21361.0,8.565
+Census commuters,2022,Regional,Border,All,Private car,175783.0,70.479
+Census commuters,2022,Regional,Border,All,Public transport,26957.0,10.808
+Census commuters,2022,Regional,Dublin,All,Active travel,245278.0,28.557
+Census commuters,2022,Regional,Dublin,All,Other,28138.0,3.276
+Census commuters,2022,Regional,Dublin,All,Private car,397056.0,46.228
+Census commuters,2022,Regional,Dublin,All,Public transport,188436.0,21.939
+Census commuters,2022,Regional,Mid-East,All,Active travel,78570.0,16.342
+Census commuters,2022,Regional,Mid-East,All,Other,27071.0,5.631
+Census commuters,2022,Regional,Mid-East,All,Private car,312439.0,64.987
+Census commuters,2022,Regional,Mid-East,All,Public transport,62691.0,13.04
+Census commuters,2022,Regional,Mid-West,All,Active travel,41103.0,13.864
+Census commuters,2022,Regional,Mid-West,All,Other,17926.0,6.047
+Census commuters,2022,Regional,Mid-West,All,Private car,214903.0,72.489
+Census commuters,2022,Regional,Mid-West,All,Public transport,22531.0,7.6
+Census commuters,2022,Regional,Midlands,All,Active travel,24484.0,12.875
+Census commuters,2022,Regional,Midlands,All,Other,13322.0,7.005
+Census commuters,2022,Regional,Midlands,All,Private car,133554.0,70.231
+Census commuters,2022,Regional,Midlands,All,Public transport,18805.0,9.889
+Census commuters,2022,Regional,South-East,All,Active travel,36972.0,13.66
+Census commuters,2022,Regional,South-East,All,Other,17699.0,6.539
+Census commuters,2022,Regional,South-East,All,Private car,193531.0,71.504
+Census commuters,2022,Regional,South-East,All,Public transport,22456.0,8.297
+Census commuters,2022,Regional,South-West,All,Active travel,65013.0,14.643
+Census commuters,2022,Regional,South-West,All,Other,26668.0,6.007
+Census commuters,2022,Regional,South-West,All,Private car,312044.0,70.283
+Census commuters,2022,Regional,South-West,All,Public transport,40260.0,9.068
+Census commuters,2022,Regional,West,All,Active travel,36773.0,12.684
+Census commuters,2022,Regional,West,All,Other,19880.0,6.857
+Census commuters,2022,Regional,West,All,Private car,206153.0,71.11
+Census commuters,2022,Regional,West,All,Public transport,27103.0,9.349
+Travel survey journeys,2014,National,Ireland,All,Active travel,16.4,16.4
+Travel survey journeys,2014,National,Ireland,All,Other,3.4,3.4
+Travel survey journeys,2014,National,Ireland,All,Private car,74.4,74.4
+Travel survey journeys,2014,National,Ireland,All,Public transport,5.8,5.8
+Travel survey journeys,2014,National,Ireland,Highly Urban,Active travel,17.3,17.283
+Travel survey journeys,2014,National,Ireland,Highly Urban,Other,2.9,2.897
+Travel survey journeys,2014,National,Ireland,Highly Urban,Private car,71.3,71.229
+Travel survey journeys,2014,National,Ireland,Highly Urban,Public transport,8.6,8.591
+Travel survey journeys,2014,National,Ireland,Rural,Active travel,15.0,15.0
+Travel survey journeys,2014,National,Ireland,Rural,Other,3.5,3.5
+Travel survey journeys,2014,National,Ireland,Rural,Private car,78.9,78.9
+Travel survey journeys,2014,National,Ireland,Rural,Public transport,2.6,2.6
+Travel survey journeys,2014,National,Ireland,Urban,Active travel,16.3,16.316
+Travel survey journeys,2014,National,Ireland,Urban,Other,4.6,4.605
+Travel survey journeys,2014,National,Ireland,Urban,Private car,76.1,76.176
+Travel survey journeys,2014,National,Ireland,Urban,Public transport,2.9,2.903
+Travel survey journeys,2016,National,Ireland,All,Active travel,16.3,16.284
+Travel survey journeys,2016,National,Ireland,All,Other,4.0,3.996
+Travel survey journeys,2016,National,Ireland,All,Private car,74.3,74.226
+Travel survey journeys,2016,National,Ireland,All,Public transport,5.5,5.495
+Travel survey journeys,2016,National,Ireland,Highly Urban,Active travel,19.2,19.219
+Travel survey journeys,2016,National,Ireland,Highly Urban,Other,3.2,3.203
+Travel survey journeys,2016,National,Ireland,Highly Urban,Private car,69.6,69.67
+Travel survey journeys,2016,National,Ireland,Highly Urban,Public transport,7.9,7.908
+Travel survey journeys,2016,National,Ireland,Rural,Active travel,11.3,11.311
+Travel survey journeys,2016,National,Ireland,Rural,Other,4.7,4.705
+Travel survey journeys,2016,National,Ireland,Rural,Private car,81.2,81.281
+Travel survey journeys,2016,National,Ireland,Rural,Public transport,2.7,2.703
+Travel survey journeys,2016,National,Ireland,Urban,Active travel,15.7,15.684
+Travel survey journeys,2016,National,Ireland,Urban,Other,4.8,4.795
+Travel survey journeys,2016,National,Ireland,Urban,Private car,76.6,76.523
+Travel survey journeys,2016,National,Ireland,Urban,Public transport,3.0,2.997
+Travel survey journeys,2019,National,Ireland,All,Active travel,15.0,15.03
+Travel survey journeys,2019,National,Ireland,All,Other,4.5,4.509
+Travel survey journeys,2019,National,Ireland,All,Private car,73.7,73.848
+Travel survey journeys,2019,National,Ireland,All,Public transport,6.6,6.613
+Travel survey journeys,2019,National,Ireland,Highly Urban,Active travel,22.4,22.378
+Travel survey journeys,2019,National,Ireland,Highly Urban,Other,4.0,3.996
+Travel survey journeys,2019,National,Ireland,Highly Urban,Private car,61.7,61.638
+Travel survey journeys,2019,National,Ireland,Highly Urban,Public transport,12.0,11.988
+Travel survey journeys,2019,National,Ireland,Rural,Active travel,8.4,8.392
+Travel survey journeys,2019,National,Ireland,Rural,Other,6.0,5.994
+Travel survey journeys,2019,National,Ireland,Rural,Private car,83.8,83.716
+Travel survey journeys,2019,National,Ireland,Rural,Public transport,1.9,1.898
+Travel survey journeys,2019,National,Ireland,Urban,Active travel,14.6,14.6
+Travel survey journeys,2019,National,Ireland,Urban,Other,3.3,3.3
+Travel survey journeys,2019,National,Ireland,Urban,Private car,76.2,76.2
+Travel survey journeys,2019,National,Ireland,Urban,Public transport,5.9,5.9
+Travel survey journeys,2019,Regional,Border,All,Active travel,20.7,20.994
+Travel survey journeys,2019,Regional,Border,All,Other,0.0,0.0
+Travel survey journeys,2019,Regional,Border,All,Private car,76.7,77.789
+Travel survey journeys,2019,Regional,Border,All,Public transport,1.2,1.217
+Travel survey journeys,2019,Regional,Dublin,All,Active travel,21.0,22.532
+Travel survey journeys,2019,Regional,Dublin,All,Other,1.5,1.609
+Travel survey journeys,2019,Regional,Dublin,All,Private car,62.2,66.738
+Travel survey journeys,2019,Regional,Dublin,All,Public transport,8.5,9.12
+Travel survey journeys,2019,Regional,Mid-East,All,Active travel,10.6,11.229
+Travel survey journeys,2019,Regional,Mid-East,All,Other,1.4,1.483
+Travel survey journeys,2019,Regional,Mid-East,All,Private car,78.2,82.839
+Travel survey journeys,2019,Regional,Mid-East,All,Public transport,4.2,4.449
+Travel survey journeys,2019,Regional,Mid-West,All,Active travel,11.4,12.076
+Travel survey journeys,2019,Regional,Mid-West,All,Other,0.0,0.0
+Travel survey journeys,2019,Regional,Mid-West,All,Private car,80.3,85.064
+Travel survey journeys,2019,Regional,Mid-West,All,Public transport,2.7,2.86
+Travel survey journeys,2019,Regional,Midlands,All,Active travel,16.2,17.035
+Travel survey journeys,2019,Regional,Midlands,All,Other,0.6,0.631
+Travel survey journeys,2019,Regional,Midlands,All,Private car,76.1,80.021
+Travel survey journeys,2019,Regional,Midlands,All,Public transport,2.2,2.313
+Travel survey journeys,2019,Regional,South-East,All,Active travel,8.1,8.446
+Travel survey journeys,2019,Regional,South-East,All,Other,0.1,0.104
+Travel survey journeys,2019,Regional,South-East,All,Private car,86.5,90.198
+Travel survey journeys,2019,Regional,South-East,All,Public transport,1.2,1.251
+Travel survey journeys,2019,Regional,South-West,All,Active travel,12.3,12.773
+Travel survey journeys,2019,Regional,South-West,All,Other,0.8,0.831
+Travel survey journeys,2019,Regional,South-West,All,Private car,78.4,81.412
+Travel survey journeys,2019,Regional,South-West,All,Public transport,4.8,4.984
+Travel survey journeys,2019,Regional,West,All,Active travel,13.7,15.155
+Travel survey journeys,2019,Regional,West,All,Other,1.4,1.549
+Travel survey journeys,2019,Regional,West,All,Private car,70.8,78.319
+Travel survey journeys,2019,Regional,West,All,Public transport,4.5,4.978
+Travel survey journeys,2021,National,Ireland,All,Active travel,19.1,19.081
+Travel survey journeys,2021,National,Ireland,All,Other,4.8,4.795
+Travel survey journeys,2021,National,Ireland,All,Private car,70.7,70.629
+Travel survey journeys,2021,National,Ireland,All,Public transport,5.5,5.495
+Travel survey journeys,2021,National,Ireland,Highly Urban,Active travel,26.7,26.7
+Travel survey journeys,2021,National,Ireland,Highly Urban,Other,3.5,3.5
+Travel survey journeys,2021,National,Ireland,Highly Urban,Private car,61.8,61.8
+Travel survey journeys,2021,National,Ireland,Highly Urban,Public transport,8.0,8.0
+Travel survey journeys,2021,National,Ireland,Rural,Active travel,12.7,12.7
+Travel survey journeys,2021,National,Ireland,Rural,Other,6.1,6.1
+Travel survey journeys,2021,National,Ireland,Rural,Private car,79.7,79.7
+Travel survey journeys,2021,National,Ireland,Rural,Public transport,1.5,1.5
+Travel survey journeys,2021,National,Ireland,Urban,Active travel,17.7,17.665
+Travel survey journeys,2021,National,Ireland,Urban,Other,4.9,4.89
+Travel survey journeys,2021,National,Ireland,Urban,Private car,69.8,69.661
+Travel survey journeys,2021,National,Ireland,Urban,Public transport,7.8,7.784
+Travel survey journeys,2021,Regional,Border,All,Active travel,13.5,14.485
+Travel survey journeys,2021,Regional,Border,All,Other,0.4,0.429
+Travel survey journeys,2021,Regional,Border,All,Private car,76.5,82.082
+Travel survey journeys,2021,Regional,Border,All,Public transport,2.8,3.004
+Travel survey journeys,2021,Regional,Dublin,All,Active travel,29.5,31.483
+Travel survey journeys,2021,Regional,Dublin,All,Other,0.7,0.747
+Travel survey journeys,2021,Regional,Dublin,All,Private car,55.7,59.445
+Travel survey journeys,2021,Regional,Dublin,All,Public transport,7.8,8.324
+Travel survey journeys,2021,Regional,Mid-East,All,Active travel,15.3,16.311
+Travel survey journeys,2021,Regional,Mid-East,All,Other,0.4,0.426
+Travel survey journeys,2021,Regional,Mid-East,All,Private car,71.1,75.8
+Travel survey journeys,2021,Regional,Mid-East,All,Public transport,7.0,7.463
+Travel survey journeys,2021,Regional,Mid-West,All,Active travel,16.7,17.181
+Travel survey journeys,2021,Regional,Mid-West,All,Other,0.8,0.823
+Travel survey journeys,2021,Regional,Mid-West,All,Private car,78.1,80.35
+Travel survey journeys,2021,Regional,Mid-West,All,Public transport,1.6,1.646
+Travel survey journeys,2021,Regional,Midlands,All,Active travel,23.6,25.053
+Travel survey journeys,2021,Regional,Midlands,All,Other,0.2,0.212
+Travel survey journeys,2021,Regional,Midlands,All,Private car,70.2,74.522
+Travel survey journeys,2021,Regional,Midlands,All,Public transport,0.2,0.212
+Travel survey journeys,2021,Regional,South-East,All,Active travel,14.8,15.795
+Travel survey journeys,2021,Regional,South-East,All,Other,0.1,0.107
+Travel survey journeys,2021,Regional,South-East,All,Private car,76.0,81.11
+Travel survey journeys,2021,Regional,South-East,All,Public transport,2.8,2.988
+Travel survey journeys,2021,Regional,South-West,All,Active travel,10.9,11.354
+Travel survey journeys,2021,Regional,South-West,All,Other,0.2,0.208
+Travel survey journeys,2021,Regional,South-West,All,Private car,83.7,87.188
+Travel survey journeys,2021,Regional,South-West,All,Public transport,1.2,1.25
+Travel survey journeys,2021,Regional,West,All,Active travel,11.6,12.46
+Travel survey journeys,2021,Regional,West,All,Other,0.2,0.215
+Travel survey journeys,2021,Regional,West,All,Private car,79.6,85.499
+Travel survey journeys,2021,Regional,West,All,Public transport,1.7,1.826
+Travel survey journeys,2024,National,Ireland,All,Active travel,15.6,15.616
+Travel survey journeys,2024,National,Ireland,All,Other,4.9,4.905
+Travel survey journeys,2024,National,Ireland,All,Private car,73.9,73.974
+Travel survey journeys,2024,National,Ireland,All,Public transport,5.5,5.506
+Travel survey journeys,2024,National,Ireland,Highly Urban,Active travel,20.9,20.879
+Travel survey journeys,2024,National,Ireland,Highly Urban,Other,4.0,3.996
+Travel survey journeys,2024,National,Ireland,Highly Urban,Private car,63.8,63.736
+Travel survey journeys,2024,National,Ireland,Highly Urban,Public transport,11.4,11.389
+Travel survey journeys,2024,National,Ireland,Rural,Active travel,13.8,13.8
+Travel survey journeys,2024,National,Ireland,Rural,Other,5.4,5.4
+Travel survey journeys,2024,National,Ireland,Rural,Private car,77.6,77.6
+Travel survey journeys,2024,National,Ireland,Rural,Public transport,3.2,3.2
+Travel survey journeys,2024,National,Ireland,Urban,Active travel,17.2,17.217
+Travel survey journeys,2024,National,Ireland,Urban,Other,4.0,4.004
+Travel survey journeys,2024,National,Ireland,Urban,Private car,70.1,70.17
+Travel survey journeys,2024,National,Ireland,Urban,Public transport,8.6,8.609
+Travel survey journeys,2024,Regional,Border,All,Active travel,14.1,14.1
+Travel survey journeys,2024,Regional,Border,All,Other,10.1,10.1
+Travel survey journeys,2024,Regional,Border,All,Private car,74.2,74.2
+Travel survey journeys,2024,Regional,Border,All,Public transport,1.6,1.6
+Travel survey journeys,2024,Regional,Dublin,All,Active travel,23.6,23.6
+Travel survey journeys,2024,Regional,Dublin,All,Other,4.3,4.3
+Travel survey journeys,2024,Regional,Dublin,All,Private car,53.6,53.6
+Travel survey journeys,2024,Regional,Dublin,All,Public transport,18.5,18.5
+Travel survey journeys,2024,Regional,Mid-East,All,Active travel,18.5,18.519
+Travel survey journeys,2024,Regional,Mid-East,All,Other,4.1,4.104
+Travel survey journeys,2024,Regional,Mid-East,All,Private car,69.4,69.469
+Travel survey journeys,2024,Regional,Mid-East,All,Public transport,7.9,7.908
+Travel survey journeys,2024,Regional,Mid-West,All,Active travel,11.7,11.712
+Travel survey journeys,2024,Regional,Mid-West,All,Other,4.7,4.705
+Travel survey journeys,2024,Regional,Mid-West,All,Private car,81.0,81.081
+Travel survey journeys,2024,Regional,Mid-West,All,Public transport,2.5,2.503
+Travel survey journeys,2024,Regional,Midlands,All,Active travel,16.1,16.1
+Travel survey journeys,2024,Regional,Midlands,All,Other,5.2,5.2
+Travel survey journeys,2024,Regional,Midlands,All,Private car,75.2,75.2
+Travel survey journeys,2024,Regional,Midlands,All,Public transport,3.5,3.5
+Travel survey journeys,2024,Regional,South-East,All,Active travel,12.1,12.1
+Travel survey journeys,2024,Regional,South-East,All,Other,3.6,3.6
+Travel survey journeys,2024,Regional,South-East,All,Private car,80.1,80.1
+Travel survey journeys,2024,Regional,South-East,All,Public transport,4.2,4.2
+Travel survey journeys,2024,Regional,South-West,All,Active travel,16.8,16.783
+Travel survey journeys,2024,Regional,South-West,All,Other,4.3,4.296
+Travel survey journeys,2024,Regional,South-West,All,Private car,74.0,73.926
+Travel survey journeys,2024,Regional,South-West,All,Public transport,5.0,4.995
+Travel survey journeys,2024,Regional,West,All,Active travel,12.9,12.9
+Travel survey journeys,2024,Regional,West,All,Other,4.9,4.9
+Travel survey journeys,2024,Regional,West,All,Private car,77.0,77.0
+Travel survey journeys,2024,Regional,West,All,Public transport,5.2,5.2

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ireland transport &amp; mobility dashboard</title>
+<meta name="description" content="Interactive dashboard of how people in Ireland travel: modal shift, passenger survey, urban vs rural living patterns, car ownership, public transport supply and kilometres travelled. Built from CSO and NTA open data.">
+<style>
+  /* ---- theme: design tokens the chart scripts refer to ---- */
+  :root {
+    color-scheme: light;
+    --font-anthropic-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-anthropic-serif: Georgia, "Times New Roman", serif;
+    --color-bg: #f5f4ef; --color-panel: #fcfcfb; --color-fg: #0b0b0b; --color-fg-muted: #52514e;
+    --color-border-line: #dedcd3; --color-bad: #c43c3b; --color-ok: #1d7f3e;
+    --cds-border: #dedcd3; --cds-surface-popover: #ffffff; --cds-text-secondary: #52514e;
+    --cds-shadow-popover: 0 4px 16px rgba(0,0,0,.12);
+    --cds-chart-axis: #b9b7ad; --cds-chart-grid: #ebe9e2; --cds-chart-muted: #c9c7bd; --cds-chart-reference: #8a887f;
+    --cds-font-size-caption: 0.8125rem; --cds-font-size-heading: 1.0625rem; --cds-font-size-title: 1.75rem;
+    --cds-font-weight-medium: 600;
+    --cds-gap-xs: 0.25rem; --cds-gap-sm: 0.5rem; --cds-gap-md: 1rem; --cds-gap-lg: 1.5rem;
+    --cds-pad-xs: 0.25rem; --cds-pad-sm: 0.5rem; --cds-pad-md: 0.75rem; --cds-pad-lg: 1.25rem;
+    --cds-radius: 8px; --cds-dur-slow: 300ms;
+  }
+  html, body { margin: 0; background: var(--color-bg); }
+  body { font-family: var(--font-anthropic-sans); color: var(--color-fg); padding: 1.5rem clamp(0.75rem, 3vw, 2.5rem) 2.5rem; max-width: 1400px; margin: 0 auto; line-height: 1.45; }
+  .dash-select { font: inherit; font-size: 0.875rem; color: var(--color-fg); background: var(--color-panel);
+    border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 0.3rem 0.5rem; }
+  .dash-skeleton { background: linear-gradient(90deg, var(--color-panel), var(--color-border-line), var(--color-panel)); background-size: 200% 100%; animation: txsk 1.4s infinite; border-radius: var(--cds-radius); }
+  @keyframes txsk { to { background-position: -200% 0; } }
+  .tx-foot { margin-top: var(--cds-gap-lg); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .tx-foot a { color: inherit; }
+</style>
+<script src="d3.min.js"></script>
+<script src="data.js"></script>
+<script src="dash-shim.js"></script>
+</head>
+<body>
+<style>
+  .tx { font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+  .tx h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0 0 var(--cds-gap-xs); }
+  .tx-lede { color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-md); max-width: 62rem; }
+  .tx-lede b, .tx-card b, .tx-kpi b { font-weight: 600; }
+  .tx-bar { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-md); align-items: end; margin-bottom: var(--cds-gap-md);
+    padding: var(--cds-pad-md); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); }
+  .tx-field { display: flex; flex-direction: column; gap: var(--cds-gap-xs); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .tx-field .dash-select { min-width: 7rem; }
+  .tx-geo { min-width: 13rem; }
+  .tx-reset { font: inherit; font-size: var(--cds-font-size-caption); background: none; border: 1px solid var(--color-border-line);
+    border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); color: var(--color-fg); cursor: pointer; }
+  .tx-tabs { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); border-bottom: 1px solid var(--color-border-line); margin-bottom: var(--cds-gap-md); }
+  .tx-tab { font: inherit; background: none; border: none; border-bottom: 2px solid transparent; padding: var(--cds-pad-sm) var(--cds-pad-md);
+    color: var(--color-fg-muted); cursor: pointer; margin-bottom: -1px; }
+  .tx-tab[aria-selected="true"] { color: var(--color-fg); border-bottom-color: currentColor; font-weight: var(--cds-font-weight-medium); }
+  .tx-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: var(--cds-gap-md); margin-bottom: var(--cds-gap-md); }
+  .tx-kpi { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); }
+  .tx-kpi-l { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .tx-kpi-v { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin: var(--cds-gap-xs) 0; min-height: 1.3em; }
+  .tx-kpi-s { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); min-height: 1.2em; }
+  .tx-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: var(--cds-gap-md); margin-bottom: var(--cds-gap-md); }
+  .tx-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+  .tx-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+  .tx-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-sm); min-height: 1.2em; }
+  .tx-ctl { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-md); align-items: center; margin-bottom: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .tx-ctl label { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); }
+  .tx-chart { position: relative; width: 100%; min-height: 320px; }
+  .tx-chart.tx-tall { min-height: 440px; }
+  .tx-chart svg { display: block; overflow: visible; }
+  .tx-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-sm) 0 0; min-height: 1em; }
+  .tx-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius);
+    box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 2; }
+  .tx-tip .h { color: var(--cds-text-secondary); margin-bottom: 2px; }
+  .tx-tip .sw { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; }
+  .tx-fail { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: inherit; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .tx-fail i { width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); display: inline-block; }
+  .tx-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-bottom: var(--cds-gap-xs); }
+  .tx-legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; background: var(--sw); }
+  .tx-up { color: var(--color-bad); } .tx-down { color: var(--color-ok); }
+  .tx details { margin-top: var(--cds-gap-lg); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .tx details summary { cursor: pointer; color: var(--color-fg); }
+  .tx dl { display: grid; grid-template-columns: minmax(8rem, 14rem) 1fr; gap: var(--cds-gap-xs) var(--cds-gap-md); }
+  .tx dt { color: var(--color-fg); }
+  [data-dash-source-state=empty] { color: transparent; }
+  [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+</style>
+
+<div class="tx">
+  <h1>Ireland transport &amp; mobility</h1>
+  <p class="tx-lede" data-draw="lede">—</p>
+
+  <div class="tx-bar" role="group" aria-label="Filters">
+    <label class="tx-field">From year<select class="dash-select" data-draw="yfrom" aria-label="From year"></select></label>
+    <label class="tx-field">To year<select class="dash-select" data-draw="yto" aria-label="To year"></select></label>
+    <label class="tx-field">Area<select class="dash-select tx-geo" data-draw="geo" aria-label="Area" data-source="area_metrics"></select></label>
+    <label class="tx-field">Settlement type
+      <select class="dash-select tx-settle" aria-label="Settlement type">
+        <option value="All">All areas</option>
+        <option value="Highly Urban">Highly urban (cities)</option>
+        <option value="Urban">Urban (towns)</option>
+        <option value="Rural">Rural</option>
+      </select>
+    </label>
+    <button class="tx-reset" type="button">Reset filters</button>
+  </div>
+
+  <div class="tx-kpis">
+    <div class="tx-kpi"><div class="tx-kpi-l">Public transport share of commuters</div><div class="tx-kpi-v" data-draw="k-pt">—</div><div class="tx-kpi-s" data-draw="k-pt-s">—</div></div>
+    <div class="tx-kpi"><div class="tx-kpi-l">Private cars per 1,000 residents</div><div class="tx-kpi-v" data-draw="k-cars">—</div><div class="tx-kpi-s" data-draw="k-cars-s">—</div></div>
+    <div class="tx-kpi"><div class="tx-kpi-l">Weekday public transport trips per 1,000 residents</div><div class="tx-kpi-v" data-draw="k-sup">—</div><div class="tx-kpi-s" data-draw="k-sup-s">—</div></div>
+    <div class="tx-kpi"><div class="tx-kpi-l">Estimated person-km per year, all modes</div><div class="tx-kpi-v" data-draw="k-km">—</div><div class="tx-kpi-s" data-draw="k-km-s">—</div></div>
+  </div>
+
+  <nav class="tx-tabs" role="tablist" aria-label="Pages">
+    <button class="tx-tab" role="tab" type="button" data-tab="modal" aria-selected="true">Modal shift</button>
+    <button class="tx-tab" role="tab" type="button" data-tab="survey" aria-selected="false">Voice of the passenger</button>
+    <button class="tx-tab" role="tab" type="button" data-tab="living" aria-selected="false">Urban vs rural</button>
+    <button class="tx-tab" role="tab" type="button" data-tab="supply" aria-selected="false">Cars, services &amp; kilometres</button>
+  </nav>
+
+  <!-- ============================== MODAL SHIFT -->
+  <section id="modal" class="tx-page" data-page="modal">
+    <div class="tx-card" id="modal-trend">
+      <h2>Public transport vs private car vs active travel</h2>
+      <p class="tx-sub" data-draw="sub-trend">—</p>
+      <div class="tx-ctl">
+        <label>Source
+          <select class="dash-select tx-series" aria-label="Source">
+            <option value="Census commuters">Census: trips to work, school or college</option>
+            <option value="Travel survey journeys">NTA travel survey: all journeys</option>
+          </select>
+        </label>
+        <label><input type="checkbox" class="tx-share"> Show as % share</label>
+      </div>
+      <div class="tx-chart" data-draw="trend" data-source="modal"></div>
+      <p class="tx-note" data-draw="note-trend">—</p>
+    </div>
+    <div class="tx-grid">
+      <div class="tx-card" id="modal-map">
+        <h2>Where it differs: map by area</h2>
+        <p class="tx-sub" data-draw="sub-map">—</p>
+        <div class="tx-ctl">
+          <label>Measure
+            <select class="dash-select tx-mapmetric" aria-label="Map measure">
+              <option value="PT share of commuters (%)">Public transport share of commuters</option>
+              <option value="PT trips per 1,000 residents">Public transport trips per 1,000 residents</option>
+              <option value="Cars per 1,000 residents">Private cars per 1,000 residents</option>
+            </select>
+          </label>
+          <label>Level
+            <select class="dash-select tx-maplevel" aria-label="Map level">
+              <option value="County">Counties</option>
+              <option value="Regional">Regions</option>
+            </select>
+          </label>
+        </div>
+        <div class="tx-chart tx-tall" data-draw="map" data-source="area_metrics ireland_map"></div>
+        <p class="tx-note">Click an area to filter the whole dashboard to it.</p>
+      </div>
+      <div class="tx-card" id="modal-peak">
+        <h2>Peak commuting times by mode</h2>
+        <p class="tx-sub" data-draw="sub-peak">—</p>
+        <div class="tx-ctl">
+          <label><input type="checkbox" class="tx-peaknorm"> Compare profiles (% of each mode's trips)</label>
+        </div>
+        <div class="tx-chart" data-draw="peak" data-source="departure"></div>
+        <p class="tx-note">National Census figures; time leaving home for work, school or college.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SURVEY -->
+  <section id="survey" class="tx-page" data-page="survey" hidden>
+    <div class="tx-card" id="survey-encourage">
+      <h2>What would encourage greater use of public transport</h2>
+      <p class="tx-sub" data-draw="sub-enc">—</p>
+      <div class="tx-ctl">
+        <label>Compare age group <select class="dash-select" data-draw="encage" aria-label="Age group" data-source="encourage"></select></label>
+      </div>
+      <div class="tx-chart" data-draw="enc" data-source="encourage"></div>
+      <p class="tx-note">Male and female percentages averaged. The CSO folder holds no passenger satisfaction ratings, so this NTA question stands in for satisfaction with reliability, frequency and value.</p>
+    </div>
+    <div class="tx-grid">
+      <div class="tx-card" id="survey-barriers">
+        <h2>Barriers to public transport</h2>
+        <p class="tx-sub" data-draw="sub-bar">—</p>
+        <div class="tx-ctl">
+          <label>Question <select class="dash-select" data-draw="question" aria-label="Survey question" data-source="barriers"></select></label>
+          <label><input type="checkbox" class="tx-barindex"> Index vs row average (=100)</label>
+        </div>
+        <div class="tx-chart tx-tall" data-draw="barriers" data-source="barriers"></div>
+      </div>
+      <div class="tx-card" id="survey-purpose">
+        <h2>Primary purpose of journey</h2>
+        <p class="tx-sub" data-draw="sub-pur">—</p>
+        <div class="tx-chart" data-draw="purpose" data-source="purpose"></div>
+        <p class="tx-note" data-draw="note-pur">—</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== LIVING PATTERNS -->
+  <section id="living" class="tx-page" data-page="living" hidden>
+    <div class="tx-card" id="living-towns">
+      <h2>Commute time vs settlement size</h2>
+      <p class="tx-sub">Census 2022 towns · average journey time to work, school or college · bubble size = population · towns under 5,000 people shown as rural</p>
+      <div class="tx-chart tx-tall" data-draw="towns" data-source="towns"></div>
+      <p class="tx-note" data-draw="note-towns">—</p>
+    </div>
+    <div class="tx-grid">
+      <div class="tx-card" id="living-cars">
+        <h2>Car ownership per household: urban vs rural</h2>
+        <p class="tx-sub" data-draw="sub-own">—</p>
+        <div class="tx-chart" data-draw="own" data-source="car_ownership"></div>
+        <p class="tx-note">Urban = cities, suburbs and towns; rural = the remainder of the country.</p>
+      </div>
+      <div class="tx-card" id="living-dependency">
+        <h2>Public transport dependency index</h2>
+        <p class="tx-sub">Public transport journeys per 100 private car journeys, by settlement type (NTA travel survey)</p>
+        <div class="tx-chart" data-draw="dep" data-source="dependency"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SUPPLY & DISTANCE -->
+  <section id="supply" class="tx-page" data-page="supply" hidden>
+    <div class="tx-card" id="supply-km">
+      <h2>Kilometres travelled by mode</h2>
+      <p class="tx-sub" data-draw="sub-km">—</p>
+      <div class="tx-ctl">
+        <label>View
+          <select class="dash-select tx-kmview" aria-label="Kilometres view">
+            <option value="est">Estimated person-km, all modes</option>
+            <option value="share">Estimated person-km, % share</option>
+            <option value="meas">Official measured series</option>
+          </select>
+        </label>
+      </div>
+      <div class="tx-chart" data-draw="km" data-source="km_estimate km_measured"></div>
+      <p class="tx-note" data-draw="note-km">—</p>
+    </div>
+    <div class="tx-grid">
+      <div class="tx-card" id="supply-cars">
+        <h2>Car ownership per capita over time</h2>
+        <p class="tx-sub">Private-tax-class vehicles under licence per 1,000 residents</p>
+        <div class="tx-chart" data-draw="carstrend" data-source="area_metrics"></div>
+        <p class="tx-note" data-draw="note-cars">—</p>
+      </div>
+      <div class="tx-card" id="supply-pt">
+        <h2>Public transport services per 1,000 residents</h2>
+        <p class="tx-sub">Weekday trips serving the area, from the NTA GTFS timetable</p>
+        <div class="tx-ctl">
+          <label>Compare
+            <select class="dash-select tx-supview" aria-label="Compare public transport services by">
+              <option value="Regional">Regions</option>
+              <option value="County">Counties</option>
+              <option value="Settlement">Settlement types</option>
+            </select>
+          </label>
+        </div>
+        <div class="tx-chart tx-tall" data-draw="supply" data-source="pt_supply"></div>
+        <p class="tx-note">A trip serving several areas counts in each. Residents = Census 2022 population.</p>
+      </div>
+    </div>
+    <div class="tx-card" id="supply-gap">
+      <h2>The infrastructure gap: car ownership vs public transport supply</h2>
+      <p class="tx-sub" data-draw="sub-gap">—</p>
+      <div class="tx-chart tx-tall" data-draw="gap" data-source="area_metrics"></div>
+    </div>
+  </section>
+
+  <details>
+    <summary>Sources, definitions and what's left out</summary>
+    <dl>
+      <dt>Census commuters</dt><dd>CSO Census 1986–2022 (FY079, F7065, E6011, FY080): people travelling to work, school or college, by usual means of travel. Working from home and "not stated" are excluded.</dd>
+      <dt>Travel survey journeys</dt><dd>NTA National Travel Survey (NTA08, NTA10): share of all journeys by adults, by mode, degree of urbanisation and NUTS3 region.</dd>
+      <dt>Settlement types</dt><dd>Highly urban = EU "densely populated" areas or the five cities and suburbs; urban = "intermediate" areas or towns; rural = "thinly populated" areas or the remainder of the country.</dd>
+      <dt>Cars per 1,000</dt><dd>Private-tax-class vehicles under licence (TTA02) divided by population (CSO annual estimates, Census for earlier county years, interpolated between).</dd>
+      <dt>Public transport services</dt><dd>Estimate: weekday trips serving each area in the NTA GTFS timetable on a representative Wednesday. Each stop is placed in its Census 2022 Small Area, then divided by Census 2022 residents.</dd>
+      <dt>Person-km</dt><dd>Estimate: adults × journeys per adult per day (NTA04) × 365 × mode share (NTA08) × average journey length by mode, from the NTA distance bands with the open 8+ km band calibrated to the published average journey distance. It understates rail against the measured series because long rail trips fall in that open band.</dd>
+      <dt>Measured kilometres</dt><dd>Road vehicle-km by vehicle type from NCT odometer readings (THA10), scheduled bus vehicle-km (TOA16), rail passenger-km (TCA02).</dd>
+      <dt>Left out</dt><dd>Passenger satisfaction ratings (no source in the CSO folder); Northern Ireland stops in the GTFS feed; journeys by people under 18 in the travel survey figures.</dd>
+    </dl>
+  </details>
+</div>
+
+<p class="tx-foot">Source: Central Statistics Office (CSO) PxStat and National Transport Authority open data, used under CC BY 4.0. Public transport services and person-km are estimates; see "Sources, definitions" above. Last updated: <span id="tx-built"></span>. Tip: the address bar keeps your filters, so you can copy it to share a filtered view.</p>
+<script>document.getElementById('tx-built').textContent = window.TX_BUILT || '';</script>
+<script src="app_core.js"></script>
+<script src="app_modal.js"></script>
+<script src="app_survey.js"></script>
+<script src="app_supply.js"></script>
+</body>
+</html>

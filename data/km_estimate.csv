@@ -1,0 +1,25 @@
+year,mode_group,mode,person_km_bn,avg_journey_km
+2019,Active travel,Cycle,0.4595,7.4642
+2019,Active travel,Walk,1.2129,2.1893
+2019,Other,Taxi,0.3333,9.0258
+2019,Other,Van / lorry / motorcycle / other,2.9915,20.2495
+2019,Private car,Car driver,40.1117,15.061
+2019,Private car,Car passenger,6.7721,18.7528
+2019,Public transport,Bus,2.78,14.1132
+2019,Public transport,Rail / DART / Luas,1.5595,21.1131
+2021,Active travel,Cycle,0.404,4.486
+2021,Active travel,Walk,1.9677,2.844
+2021,Other,Taxi,0.2116,12.9221
+2021,Other,Van / lorry / motorcycle / other,2.3277,12.9221
+2021,Private car,Car driver,38.0944,14.6076
+2021,Private car,Car passenger,5.1278,17.8932
+2021,Public transport,Bus,3.225,18.3199
+2021,Public transport,Rail / DART / Luas,0.6348,12.9221
+2024,Active travel,Cycle,0.4032,4.756
+2024,Active travel,Walk,1.8476,3.205
+2024,Other,Taxi,0.3228,12.6902
+2024,Other,Van / lorry / motorcycle / other,2.8995,15.9074
+2024,Private car,Car driver,40.7155,15.1504
+2024,Private car,Car passenger,6.7311,15.1233
+2024,Public transport,Bus,2.6759,15.3972
+2024,Public transport,Rail / DART / Luas,1.205,20.3053
