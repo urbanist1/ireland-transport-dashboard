@@ -13,6 +13,7 @@ Refresh the figures:
 import datetime
 import json
 import pathlib
+import re
 
 HERE = pathlib.Path(__file__).resolve().parent
 DATA = HERE / "data"
@@ -29,6 +30,11 @@ def main() -> None:
         f"window.TX_JSON = {{\"ireland_map\": {json.dumps(geo, separators=(',', ':'))}}};\n"
     )
     (HERE / "data.js").write_text(out, encoding="utf-8")
+    # stamp a new version on every script so browsers fetch fresh copies
+    stamp = datetime.datetime.now().strftime("%Y%m%d%H%M")
+    page = HERE / "index.html"
+    html = re.sub(r'(<script src="[\w.-]+\.js)(\?v=\d+)?"', rf'\1?v={stamp}"', page.read_text(encoding="utf-8"))
+    page.write_text(html, encoding="utf-8")
     print(f"data.js: {len(csv)} tables + map, {len(out) / 1024:.0f} KB, built {built}")
 
 

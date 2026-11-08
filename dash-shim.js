@@ -65,15 +65,21 @@ window.dash = (() => {
       document.querySelectorAll(`[data-draw="${name}"]`).forEach((el) => {
         const chart = el.classList.contains('tx-chart');
         if (chart && !isShown(el)) { el.dataset.stale = '1'; return; }
-        try { fn(el); delete el.dataset.stale; } catch (e) { console.error(`draw ${name}`, e); }
+        try { fn(el); delete el.dataset.stale; } catch (e) {
+          console.error(`draw ${name}`, e);
+          if (chart) { el.replaceChildren(); const m = document.createElement('p'); m.className = 'tx-fail';
+            m.textContent = 'This chart could not be drawn in this browser. Try reloading the page, or open it in Chrome, Edge or Firefox.'; el.append(m); }
+        }
       });
     }
     for (const fn of listeners) { try { fn(); } catch (e) { console.error(e); } }
   }
   let queued = false;
+  // Draw on the next frame; the timer is a fallback for browsers that pause animation frames.
   function schedule() {
     if (queued) return; queued = true;
-    requestAnimationFrame(() => { queued = false; run(); });
+    const go = () => { if (!queued) return; queued = false; run(); };
+    requestAnimationFrame(go); setTimeout(go, 120);
   }
   document.addEventListener('DOMContentLoaded', schedule);
   let lastW = window.innerWidth;

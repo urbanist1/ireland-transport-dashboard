@@ -30,10 +30,22 @@
   @keyframes txsk { to { background-position: -200% 0; } }
   .tx-foot { margin-top: var(--cds-gap-lg); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
   .tx-foot a { color: inherit; }
+  .tx-fail, .tx-loadfail { font-size: 0.875rem; color: var(--color-bad); padding: 1rem; border: 1px dashed var(--color-bad); border-radius: var(--cds-radius); }
 </style>
-<script src="d3.min.js"></script>
-<script src="data.js"></script>
-<script src="dash-shim.js"></script>
+<script>
+  // If a script fails to load or parse, say so on the page instead of leaving blank panels.
+  window.addEventListener('error', (e) => {
+    const src = e.target && e.target.src ? e.target.src : (e.filename || '');
+    if (!/\.js/.test(src) && !(e.message && /SyntaxError/.test(e.message))) return;
+    const show = () => { if (document.querySelector('.tx-loadfail')) return; const d = document.createElement('p'); d.className = 'tx-loadfail';
+      d.textContent = `Part of the dashboard did not load (${src.split('/').pop().split('?')[0] || 'script'}). Please reload the page; if it persists, try another browser.`;
+      document.body.prepend(d); };
+    if (document.body) show(); else document.addEventListener('DOMContentLoaded', show);
+  }, true);
+</script>
+<script src="d3.min.js?v=202611080053"></script>
+<script src="data.js?v=202611080053"></script>
+<script src="dash-shim.js?v=202611080053"></script>
 </head>
 <body>
 <style>
@@ -286,9 +298,9 @@
 <p class="tx-foot">Source: Central Statistics Office (CSO) PxStat and National Transport Authority open data, used under CC BY 4.0. Public transport services and person-km are estimates; see "Sources, definitions" above. Last updated: <span id="tx-built"></span>. Tip: the address bar keeps your filters, so you can copy it to share a filtered view.</p>
 <p class="tx-foot">Made with the use of Claude AI.</p>
 <script>document.getElementById('tx-built').textContent = window.TX_BUILT || '';</script>
-<script src="app_core.js"></script>
-<script src="app_modal.js"></script>
-<script src="app_survey.js"></script>
-<script src="app_supply.js"></script>
+<script src="app_core.js?v=202611080053"></script>
+<script src="app_modal.js?v=202611080053"></script>
+<script src="app_survey.js?v=202611080053"></script>
+<script src="app_supply.js?v=202611080053"></script>
 </body>
 </html>
