@@ -43,9 +43,9 @@
     if (document.body) show(); else document.addEventListener('DOMContentLoaded', show);
   }, true);
 </script>
-<script src="d3.min.js?v=202611080053"></script>
-<script src="data.js?v=202611080053"></script>
-<script src="dash-shim.js?v=202611080053"></script>
+<script src="d3.min.js?v=202611102131"></script>
+<script src="data.js?v=202611102131"></script>
+<script src="dash-shim.js?v=202611102131"></script>
 </head>
 <body>
 <style>
@@ -77,6 +77,7 @@
   .tx-ctl label { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); }
   .tx-chart { position: relative; width: 100%; min-height: 320px; }
   .tx-chart.tx-tall { min-height: 440px; }
+  .tx-chart.tx-fit { min-height: 0; }
   .tx-chart svg { display: block; overflow: visible; }
   .tx-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-sm) 0 0; min-height: 1em; }
   .tx-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius);
@@ -127,6 +128,7 @@
     <button class="tx-tab" role="tab" type="button" data-tab="survey" aria-selected="false">Voice of the passenger</button>
     <button class="tx-tab" role="tab" type="button" data-tab="living" aria-selected="false">Urban vs rural</button>
     <button class="tx-tab" role="tab" type="button" data-tab="supply" aria-selected="false">Cars, services &amp; kilometres</button>
+    <button class="tx-tab" role="tab" type="button" data-tab="groups" aria-selected="false">Who commutes &amp; the bus</button>
   </nav>
 
   <!-- ============================== MODAL SHIFT -->
@@ -280,10 +282,56 @@
     </div>
   </section>
 
+  <!-- ============================== WHO COMMUTES & THE BUS -->
+  <section id="groups" class="tx-page" data-page="groups" hidden>
+    <p class="tx-note" data-draw="g-scope" hidden></p>
+    <div class="tx-card" id="groups-growth">
+      <h2>Where the growth in commuting went</h2>
+      <p class="tx-sub" data-draw="g-sub-growth">—</p>
+      <div class="tx-chart tx-fit" data-draw="g-growth" data-source="commute_groups"></div>
+      <p class="tx-note" data-draw="g-note-growth">—</p>
+    </div>
+    <div class="tx-grid">
+      <div class="tx-card" id="groups-who">
+        <h2>Who commutes: change by group</h2>
+        <p class="tx-sub" data-draw="g-sub-who">—</p>
+        <div class="tx-chart tx-fit" data-draw="g-who" data-source="commute_groups"></div>
+        <p class="tx-note" data-draw="g-note-who">—</p>
+      </div>
+      <div class="tx-card" id="groups-bus">
+        <h2>Who takes the bus</h2>
+        <p class="tx-sub" data-draw="g-sub-bus">—</p>
+        <div class="tx-ctl">
+          <label><input type="checkbox" class="tx-gbusshare"> Show as % share</label>
+        </div>
+        <div class="tx-chart" data-draw="g-bus" data-source="commute_groups"></div>
+        <p class="tx-note" data-draw="g-note-bus">—</p>
+      </div>
+    </div>
+    <div class="tx-card" id="groups-modes">
+      <h2>How each group travels</h2>
+      <p class="tx-sub" data-draw="g-sub-modes">—</p>
+      <div class="tx-ctl">
+        <label>Group
+          <select class="dash-select tx-ggroup" aria-label="Group">
+            <option value="Everyone">Everyone</option>
+            <option value="Workers (15+)">Workers (15+)</option>
+            <option value="Students (19+)">Students (19+)</option>
+            <option value="Secondary (13-18)">Secondary school (13-18)</option>
+            <option value="Primary school (5-12)">Primary school (5-12)</option>
+          </select>
+        </label>
+      </div>
+      <div class="tx-chart" data-draw="g-modes" data-source="commute_groups"></div>
+      <p class="tx-note" data-draw="g-note-modes">—</p>
+    </div>
+  </section>
+
   <details>
     <summary>Sources, definitions and what's left out</summary>
     <dl>
       <dt>Census commuters</dt><dd>CSO Census 1986–2022 (FY079, F7065, E6011, FY080): people travelling to work, school or college, by usual means of travel. Working from home and "not stated" are excluded.</dd>
+      <dt>Commuter groups</dt><dd>CSO Census 1986–2022 (F7122): people usually resident and present in the State travelling to work, school or college, by means of travel and group (workers aged 15+, childcare 0–4, primary 5–12, secondary 13–18, students 19+). National figures only. "Not stated" is excluded from the shares; childcare was first counted in 2022.</dd>
       <dt>Travel survey journeys</dt><dd>NTA National Travel Survey (NTA08, NTA10): share of all journeys by adults, by mode, degree of urbanisation and NUTS3 region.</dd>
       <dt>Settlement types</dt><dd>Highly urban = EU "densely populated" areas or the five cities and suburbs; urban = "intermediate" areas or towns; rural = "thinly populated" areas or the remainder of the country.</dd>
       <dt>Cars per 1,000</dt><dd>Private-tax-class vehicles under licence (TTA02) divided by population (CSO annual estimates, Census for earlier county years, interpolated between).</dd>
@@ -298,9 +346,10 @@
 <p class="tx-foot">Source: Central Statistics Office (CSO) PxStat and National Transport Authority open data, used under CC BY 4.0. Public transport services and person-km are estimates; see "Sources, definitions" above. Last updated: <span id="tx-built"></span>. Tip: the address bar keeps your filters, so you can copy it to share a filtered view.</p>
 <p class="tx-foot">Made with the use of Claude AI.</p>
 <script>document.getElementById('tx-built').textContent = window.TX_BUILT || '';</script>
-<script src="app_core.js?v=202611080053"></script>
-<script src="app_modal.js?v=202611080053"></script>
-<script src="app_survey.js?v=202611080053"></script>
-<script src="app_supply.js?v=202611080053"></script>
+<script src="app_core.js?v=202611102131"></script>
+<script src="app_modal.js?v=202611102131"></script>
+<script src="app_survey.js?v=202611102131"></script>
+<script src="app_supply.js?v=202611102131"></script>
+<script src="app_groups.js?v=202611102131"></script>
 </body>
 </html>
