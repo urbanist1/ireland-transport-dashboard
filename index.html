@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ireland transport &amp; mobility dashboard</title>
-<meta name="description" content="Interactive dashboard of how people in Ireland travel: modal shift, passenger survey, urban vs rural living patterns, car ownership, public transport supply and kilometres travelled. Built from CSO and NTA open data.">
+<meta name="description" content="Interactive dashboard of how people in Ireland travel: modal shift, passenger survey, urban vs rural living patterns, car ownership, public transport supply, kilometres travelled and commuting flows in Galway. Built from CSO and NTA open data.">
 <style>
   /* ---- theme: design tokens the chart scripts refer to ---- */
   :root {
@@ -43,9 +43,9 @@
     if (document.body) show(); else document.addEventListener('DOMContentLoaded', show);
   }, true);
 </script>
-<script src="d3.min.js?v=202611102131"></script>
-<script src="data.js?v=202611102131"></script>
-<script src="dash-shim.js?v=202611102131"></script>
+<script src="d3.min.js?v=202611110028"></script>
+<script src="data.js?v=202611110028"></script>
+<script src="dash-shim.js?v=202611110028"></script>
 </head>
 <body>
 <style>
@@ -93,6 +93,51 @@
   .tx details summary { cursor: pointer; color: var(--color-fg); }
   .tx dl { display: grid; grid-template-columns: minmax(8rem, 14rem) 1fr; gap: var(--cds-gap-xs) var(--cds-gap-md); }
   .tx dt { color: var(--color-fg); }
+  /* ---- commuting flows tab */
+  .tx-fzoom { position: absolute; top: 10px; right: 10px; display: flex; flex-direction: column; gap: 4px; }
+  .tx-fzoom button { font: inherit; font-size: var(--cds-font-size-caption); min-width: 2.2rem; background: var(--color-panel); color: var(--color-fg);
+    border: 1px solid var(--color-border-line); border-radius: 6px; padding: 2px 6px; cursor: pointer; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+  .tx-fhint { position: absolute; top: 10px; left: 10px; font-size: 0.75rem; color: var(--color-fg-muted); background: color-mix(in srgb, var(--color-panel) 90%, transparent);
+    border: 1px solid var(--color-border-line); border-radius: 6px; padding: 1px 7px; pointer-events: none; }
+  .tx-flegend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-lg); padding-top: var(--cds-pad-sm); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .tx-flegend-c { flex: 1 1 22rem; max-width: 36rem; }
+  .tx-flegend-f { flex: 0 1 auto; }
+  .tx-flegend-t { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); margin-bottom: 4px; }
+  .tx-framp { display: flex; gap: 2px; }
+  .tx-framp i { flex: 1 1 0; height: 10px; border-radius: 2px; min-width: 1.6rem; }
+  .tx-fticks { display: flex; gap: 2px; font-size: 0.6875rem; font-variant-numeric: tabular-nums; }
+  .tx-fticks span { flex: 1 1 0; min-width: 1.6rem; text-align: center; }
+  .tx-fticks.tx-fends { justify-content: space-between; margin-top: 2px; }
+  .tx-fticks.tx-fends span { flex: none; }
+  .tx-fflows { display: flex; align-items: center; gap: var(--cds-gap-sm); margin-top: 4px; }
+  .tx-fstats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: var(--cds-gap-sm); margin: var(--cds-gap-sm) 0; }
+  .tx-fstats div { background: var(--color-bg); border-radius: 6px; padding: var(--cds-pad-xs) var(--cds-pad-sm); }
+  .tx-fstats b { display: block; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: 1.25rem; font-variant-numeric: tabular-nums; }
+  .tx-fstats span { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .tx-fh3 { font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); margin: var(--cds-gap-md) 0 var(--cds-gap-xs); }
+  .tx-fclear { float: right; margin-top: -1.9rem; }
+  .tx-fbars { display: flex; flex-direction: column; gap: 2px; }
+  .tx-fbar { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(3rem, 1fr) auto; gap: var(--cds-gap-sm); align-items: center; font: inherit;
+    font-size: 0.8125rem; text-align: left; color: var(--color-fg); background: none; border: 0; border-radius: 5px; padding: 2px 4px; width: 100%; }
+  button.tx-fbar { cursor: pointer; } button.tx-fbar:hover { background: var(--color-bg); }
+  .tx-fbar .n { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .tx-fbar .tr { height: 10px; background: var(--cds-chart-grid); border-radius: 0 4px 4px 0; position: relative; }
+  .tx-fbar .tr i { position: absolute; inset: 0 auto 0 0; background: #2a78d6; border-radius: 0 4px 4px 0; }
+  .tx-fbar .tr i.ext { background: var(--cds-chart-reference); }
+  .tx-fbar .v { text-align: right; font-variant-numeric: tabular-nums; color: var(--color-fg-muted); white-space: nowrap; }
+  .tx-fmatrix-wrap { overflow-x: auto; }
+  .tx-fmatrix { border-collapse: separate; border-spacing: 2px; font-size: 0.75rem; font-variant-numeric: tabular-nums; }
+  .tx-fmatrix th { font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: 3px 6px; }
+  .tx-fmatrix thead th { vertical-align: bottom; text-align: center; max-width: 5.5rem; line-height: 1.2; }
+  .tx-fmatrix thead th.c { text-align: right; white-space: nowrap; }
+  .tx-fmatrix tbody th { text-align: right; white-space: nowrap; }
+  .tx-fmatrix th.pick { cursor: pointer; } .tx-fmatrix th.pick:hover { color: var(--color-fg); text-decoration: underline; }
+  .tx-fmatrix tr.sel th { color: var(--color-fg); }
+  .tx-fmatrix td { text-align: right; padding: 5px 7px; border-radius: 3px; min-width: 3.6rem; }
+  .tx-fmatrix td.diag { outline: 2px solid var(--color-fg); outline-offset: -2px; }
+  .tx-fmatrix td.tot { color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); background: transparent; }
+  .tx-fmatrix .gap { border-left: 10px solid transparent; }
+  .tx-fmatrix tr.in th, .tx-fmatrix tr.tot th { color: var(--color-fg-muted); font-weight: 400; }
   [data-dash-source-state=empty] { color: transparent; }
   [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
 </style>
@@ -129,6 +174,7 @@
     <button class="tx-tab" role="tab" type="button" data-tab="living" aria-selected="false">Urban vs rural</button>
     <button class="tx-tab" role="tab" type="button" data-tab="supply" aria-selected="false">Cars, services &amp; kilometres</button>
     <button class="tx-tab" role="tab" type="button" data-tab="groups" aria-selected="false">Who commutes &amp; the bus</button>
+    <button class="tx-tab" role="tab" type="button" data-tab="flows" aria-selected="false">Commuting flows: Galway</button>
   </nav>
 
   <!-- ============================== MODAL SHIFT -->
@@ -327,6 +373,60 @@
     </div>
   </section>
 
+  <!-- ============================== COMMUTING FLOWS (GALWAY) -->
+  <section id="flows" class="tx-page" data-page="flows" hidden>
+    <p class="tx-note" data-draw="f-scope" hidden></p>
+    <div class="tx-card" id="flows-map">
+      <h2>Where people commute: flows between areas</h2>
+      <p class="tx-sub" data-draw="f-sub-map">—</p>
+      <div class="tx-ctl">
+        <label>Areas
+          <select class="dash-select tx-flevel" aria-label="Areas">
+            <option value="area">Electoral areas</option>
+            <option value="ed">Electoral divisions (EDs)</option>
+          </select>
+        </label>
+        <label>Colour by <select class="dash-select" data-draw="f-colour" aria-label="Colour the map by"></select></label>
+        <label>Selected area shows
+          <select class="dash-select tx-fdir" aria-label="Selected area shows">
+            <option value="out">where its residents go</option>
+            <option value="in">where its workforce lives</option>
+          </select>
+        </label>
+        <label><input type="checkbox" class="tx-flines"> Flow lines</label>
+        <label>Smallest flow <select class="dash-select" data-draw="f-min" aria-label="Smallest flow shown"></select></label>
+      </div>
+      <div class="tx-chart tx-tall" data-draw="f-map" data-source="galway_flows ireland_map"></div>
+      <p class="tx-note">Click an area to follow its flows; click it again, the sea or "Clear selection" to go back. Lines join area centre points and are not routes.</p>
+    </div>
+    <div class="tx-grid">
+      <div class="tx-card" id="flows-selected">
+        <h2 data-draw="f-sel-h">Selected area</h2>
+        <div class="tx-chart tx-fit" data-draw="f-sel" data-source="galway_flows"></div>
+      </div>
+      <div class="tx-card" id="flows-top">
+        <h2>Largest flows</h2>
+        <p class="tx-sub" data-draw="f-sub-top">—</p>
+        <div class="tx-chart tx-fit" data-draw="f-top" data-source="galway_flows"></div>
+      </div>
+    </div>
+    <div class="tx-card" id="flows-matrix">
+      <h2>Electoral area matrix</h2>
+      <p class="tx-sub" data-draw="f-sub-mx">—</p>
+      <div class="tx-ctl">
+        <label>Values
+          <select class="dash-select tx-fmx" aria-label="Matrix values">
+            <option value="n">People</option>
+            <option value="row">% of row</option>
+            <option value="col">% of column</option>
+          </select>
+        </label>
+      </div>
+      <div class="tx-chart tx-fit" data-draw="f-matrix" data-source="galway_flows"></div>
+      <p class="tx-note">The outlined diagonal is people staying in their own area. "Elsewhere" = other counties, Northern Ireland and overseas. The bottom rows count people who live outside the county and work or study in each area, and everyone working or studying there. Click a row name to follow it on the map.</p>
+    </div>
+  </section>
+
   <details>
     <summary>Sources, definitions and what's left out</summary>
     <dl>
@@ -338,6 +438,7 @@
       <dt>Public transport services</dt><dd>Estimate: weekday trips serving each area in the NTA GTFS timetable on a representative Wednesday. Each stop is placed in its Census 2022 Small Area, then divided by Census 2022 residents.</dd>
       <dt>Person-km</dt><dd>Estimate: adults × journeys per adult per day (NTA04) × 365 × mode share (NTA08) × average journey length by mode, from the NTA distance bands with the open 8+ km band calibrated to the published average journey distance. It understates rail against the measured series because long rail trips fall in that open band.</dd>
       <dt>Measured kilometres</dt><dd>Road vehicle-km by vehicle type from NCT odometer readings (THA10), scheduled bus vehicle-km (TOA16), rail passenger-km (TCA02).</dd>
+      <dt>Commuting flows</dt><dd>CSO Census 2022 Place of Work, School or College (POWSCC) flows between Electoral Divisions, for Galway city and county; CSO 2022 ED and Local Electoral Area boundaries (simplified); population from the Census 2022 Small Area Population Statistics. "Residents commuting" counts everyone with a recorded place of work, school or college, including students, working from home and no fixed place; "not stated" is excluded. Jobs balance = people working or studying in an area ÷ its residents who travel to a fixed place. Lines join each area's centre point.</dd>
       <dt>Left out</dt><dd>Passenger satisfaction ratings (no source in the CSO folder); Northern Ireland stops in the GTFS feed; journeys by people under 18 in the travel survey figures.</dd>
     </dl>
   </details>
@@ -346,10 +447,11 @@
 <p class="tx-foot">Source: Central Statistics Office (CSO) PxStat and National Transport Authority open data, used under CC BY 4.0. Public transport services and person-km are estimates; see "Sources, definitions" above. Last updated: <span id="tx-built"></span>. Tip: the address bar keeps your filters, so you can copy it to share a filtered view.</p>
 <p class="tx-foot">Made with the use of Claude AI.</p>
 <script>document.getElementById('tx-built').textContent = window.TX_BUILT || '';</script>
-<script src="app_core.js?v=202611102131"></script>
-<script src="app_modal.js?v=202611102131"></script>
-<script src="app_survey.js?v=202611102131"></script>
-<script src="app_supply.js?v=202611102131"></script>
-<script src="app_groups.js?v=202611102131"></script>
+<script src="app_core.js?v=202611110028"></script>
+<script src="app_modal.js?v=202611110028"></script>
+<script src="app_survey.js?v=202611110028"></script>
+<script src="app_supply.js?v=202611110028"></script>
+<script src="app_groups.js?v=202611110028"></script>
+<script src="app_flows.js?v=202611110028"></script>
 </body>
 </html>
